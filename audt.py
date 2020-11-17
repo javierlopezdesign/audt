@@ -26,15 +26,10 @@ def report():
                                 r = http.request('GET', urlRequested)
                                 # print(r.status)
                         
-                                # launch lighthouse
                                 # getting filename
-
                                 trimmedUrl = tldextract.extract(urlRequested)
                                 timestamp = time.strftime('%d%m%Y-%H:%M')
                                 filename =  timestamp + "-" + trimmedUrl.domain                               
-
-                                # print(filename)
-                                # print(urlRequested)
 
                                 os.system("lighthouse-ci --silent " + urlRequested + " --report=static/reports --jsonReport --filename=" + filename + ".html")
                                 
@@ -47,7 +42,7 @@ def report():
                                         # Create a class to pass the data to jinja   
                                         class reportClass:
                                                 # web size!
-                                                url = trimmedUrl
+                                                url = urlRequested
                                                 webSizeBytes = data['audits']['diagnostics']['details']['items'][0]['totalByteWeight']
                                                 webSizeMB = round(webSizeBytes/pow(1024,2),2)
                                         
@@ -71,6 +66,7 @@ def report():
                                                 # seo
                                                 seoScore = round(data['categories']['seo']['score']*100)
 
+                                        # apply the class to a variable
                                         report = reportClass()
 
                                 return render_template('report.html', report = report)
@@ -92,42 +88,7 @@ def report():
 
 @app.route('/test', methods=['GET', 'POST'])
 def test():
-        with open('static/reports/17112020-13:51-javierlopez.json') as json_file:
-                data = json.load(json_file)
-                
-                # web size!
-                # webSizeBytes = data['audits']['diagnostics']['details']['items'][0]['totalByteWeight']
-                # webSizeMB = round(webSizeBytes/pow(1024,2),2)
-                
-                # # ALT images!! 0 is some links missin
-                # altScore = data['audits']['image-alt']['score']
-                # altScoreAmount = len(data['audits']['image-alt']['details']['items'])
-
-                # # Performance and performance text...
-                # performanceScore = round(data['categories']['performance']['score']*100)
-                
-                # # accesibility
-                # accessibilityScore = round(data['categories']['accessibility']['score']*100)
-
-                # # accesibility
-                # practicesScore = round(data['categories']['best-practices']['score']*100)
-                
-                # # accesibility
-                # seoScore = round(data['categories']['seo']['score']*100)
-                
-                # deadlinks = data['audits']['crawlable-anchors']['score']
-                # linksAmount = len(data['audits']['crawlable-anchors']['details']['items'])
-                
-                # print(linksAmount)
-                # print(data['categories']['accessibility']['description'])
-
-
-
-
-
-
-
-
+        
         return "whatever..."
 
 
