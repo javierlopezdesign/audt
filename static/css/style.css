@@ -158,6 +158,19 @@ header {
           align-items: center;
 }
 
+header .alert {
+  border: 1px solid #bf2e2e;
+  background-color: #e4aaaa4b;
+  width: 50%;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+header .alert p {
+  color: #bf2e2e;
+}
+
 header h1 {
   text-align: center;
 }

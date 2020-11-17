@@ -1,47 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- {% if urlError %}
+<h1>Hello</h1>
+{% else %}
+<h1>No url provided...</h1>
+{% endif %} -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AuDT - Auditory Tool</title>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js "></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
 
-</head>
+
+{% include "htmlHeaders.html" %}
 
 <body>
-
-    <nav>
-        <!-- include the nav file -->
-
-        <div class="logo">
-            <a href="index.html"><img src="{{ url_for('static', filename='images/logo.svg') }}" alt="audt logo"></a>
-        </div>
-        <div class="menu">
-            <ul>
-                <li><a href="#aboutus">About Us</a></li>
-                <li><a href="#features">Features</a></li>
-                <!-- <li><a href="">FAQ</a></li> -->
-            </ul>
-            <!-- <label for="menuchkbox" class="">menu</label> -->
-            <!-- <input id="menuchkbox" type="checkbox"> -->
-        </div>
-    </nav>
+    {% include "nav.html" %}
     <header>
-
         <div class="container">
-
             <h1>AuDT the tool to keep your performance checks.</h1>
-
-            <form action="report.html" method="POST">
+            
+            {% if urlError %}
+                <div class="alert">
+                    <p>{{ urlError }}</p>
+                </div>
+            {% endif %}
+            
+            <form action="{{ url_for('report') }}" method="POST">
                 <label for="url"></label>
-
                 <div class="inputurl">
-                    <input type="text" name="url" placeholder="Introduce a URL..." id="url">
+                    <input type="text" name="url" placeholder="Introduce a URL..." id="url" required>
                     <button type="submit" name="urlSubmit">Check it!</button>
                 </div>
                 <p>Message about GDPR. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste iusto, tempore labore laboriosam corrupti iure dolor laborum accusantium adipisci dolore?
@@ -49,7 +32,6 @@
                 </p>
             </form>
         </div>
-
     </header>
 
     <main>
@@ -116,37 +98,9 @@
 
         </div>
     </main>
+    {% include "footer.html" %}
 
-    <footer>
 
-        <!-- Add footer file here -->
-        <div class="container ">
-            <div class="footermenu ">
-                <ul>
-                    <li>Features</li>
-                    <li>About Us</li>
-                    <!-- <li>FAQ</li> -->
-                </ul>
-            </div>
-            <div class="powered">
-                <p>Powered by
-                    <a href="">Lighthouse</a>
-                </p>
-                <p>Design & Development by
-                    <a href="https://javierlopez.design">javierlopez.design</a>
-                </p>
-            </div>
-        </div>
-    </footer>
-
-</body>
-
-<script>
-    $(document).ready(function() {
-        $(".featureBox ").click(function() {
-            $(this).children('p').slideToggle();
-        });
-    });
-</script>
 
 </html>
+</body>

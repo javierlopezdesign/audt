@@ -1,37 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
+{% if url == "error" %}
+<h1>Hello {{ url }}!</h1>
+{% else %}
+<!-- <h1>No url provided...</h1> -->
+{% endif %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AuDT - Auditory tool</title>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js "></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
 
-</head>
+
+{% include "htmlHeaders.html" %}
 
 <body>
-    <nav>
-        <!-- include the nav file -->
+    {% include "nav.html" %}
 
-        <div class="logo">
-            <a href="index.html"><img src="images/logo.svg" alt="audt logo"></a>
-        </div>
-        <div class="menu">
-            <ul>
-                <li><a href="#aboutus">About Us</a></li>
-                <li><a href="#features">Features</a></li>
-                <!-- <li><a href="">FAQ</a></li> -->
-            </ul>
-
-        </div>
-    </nav>
+<body>
     <main>
         <div class="containerReport">
-            <h1>example.co.uk</h1>
+            <h1>{{ url }}</h1>
             <div class="report">
                 <div class="boxesContainer">
                     <!-- Performance -->
@@ -118,30 +103,7 @@
             </div>
     </main>
 
-
-
-
-    <footer>
-
-        <!-- Add footer file here -->
-        <div class="container ">
-            <div class="footermenu ">
-                <ul>
-                    <li>Features</li>
-                    <li>About Us</li>
-                    <!-- <li>FAQ</li> -->
-                </ul>
-            </div>
-            <div class="powered">
-                <p>Powered by
-                    <a href="">Lighthouse</a>
-                </p>
-                <p>Design & Development by
-                    <a href="https://javierlopez.design">javierlopez.design</a>
-                </p>
-            </div>
-        </div>
-    </footer>
+    {% include "footer.html" %}
 
 
 

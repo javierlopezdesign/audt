@@ -1,0 +1,28 @@
+<footer>
+    <div class="container ">
+        <div class="footermenu ">
+            <ul>
+                <li><a href="{{ url_for('root') }}#aboutus">About Us</a></li>
+                <li><a href="{{ url_for('root') }}#features">Features</a></li>
+                <!-- <li>FAQ</li> -->
+            </ul>
+        </div>
+        <div class="powered">
+            <p>Powered by
+                <a href="https://developers.google.com/web/tools/lighthouse">Lighthouse</a>
+            </p>
+            <p>Design & Development by
+                <a target="_blank" href="https://javierlopez.design">javierlopez.design</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+$(document).ready(function() {
+    $(".featureBox ").click(function() {
+        $(this).children('p').slideToggle();
+    });
+});
+</script>
