@@ -2,7 +2,8 @@ from flask import Flask, redirect , url_for, request, render_template
 from urllib.request import urlopen
 from urllib.error import HTTPError, URLError
 from datetime import datetime
-import urllib3, time, os
+import urllib3, time, os, json
+import tldextract
 
 app = Flask(__name__)
 
@@ -27,42 +28,53 @@ def report():
                         
                                 # launch lighthouse
                                 # getting filename
-                                trimmedUrl = urlRequested.split("://www.")[1]
+
+                                trimmedUrl = tldextract.extract(urlRequested)
                                 timestamp = time.strftime('%d%m%Y-%H:%M')
-                                filename =  timestamp + "-" + trimmedUrl
+                                filename =  timestamp + "-" + trimmedUrl.domain                               
 
                                 # print(filename)
+                                # print(urlRequested)
 
-                                os.system("lighthouse-ci " + urlRequested + " --silent --report=static/reports --filename=" + filename + " --jsonReport")
+                                os.system("lighthouse-ci --silent " + urlRequested + " --report=static/reports --jsonReport --filename=" + filename + ".html")
+                                
+                                # get rid of .html
+                                os.system("rm static/reports/" + filename + ".html")
 
+                                with open("static/reports/" + filename + ".json") as json_file:
+                                        data = json.load(json_file)
 
+                                        # Create a class to pass the data to jinja   
+                                        class reportClass:
+                                                # web size!
+                                                url = trimmedUrl
+                                                webSizeBytes = data['audits']['diagnostics']['details']['items'][0]['totalByteWeight']
+                                                webSizeMB = round(webSizeBytes/pow(1024,2),2)
+                                        
+                                                # dead links
+                                                deadlinks = data['audits']['crawlable-anchors']['score']
+                                                linksAmount = len(data['audits']['crawlable-anchors']['details']['items'])
+                        
+                                                # ALT images!! 0 is some links missin
+                                                altScore = data['audits']['image-alt']['score']
+                                                altScoreAmount = len(data['audits']['image-alt']['details']['items'])
 
+                                                # Performance
+                                                performanceScore = round(data['categories']['performance']['score']*100)
+                                                
+                                                # accesibility
+                                                accessibilityScore = round(data['categories']['accessibility']['score']*100)
 
+                                                # practices
+                                                practicesScore = round(data['categories']['best-practices']['score']*100)
+                                                
+                                                # seo
+                                                seoScore = round(data['categories']['seo']['score']*100)
 
+                                        report = reportClass()
 
-
-
-
-
-
-
-                                # read the JSON and parse the variables!!!!
-
-
-
-
-
-
-
-
-
-
-
-                                return render_template('report.html', url = urlRequested)
+                                return render_template('report.html', report = report)
         
-                        # except urllib3.exceptions.MaxRetryError:
-                        #         urlError = "The URL response w=has too many errors."
-                        #         return render_template('index.html', urlError = urlError)
                         except:
                                 raise
 
@@ -80,8 +92,43 @@ def report():
 
 @app.route('/test', methods=['GET', 'POST'])
 def test():
-        timestamp = time.strftime('%d%m%Y-%H:%M') 
-        return render_template('javierlopez.html')
+        with open('static/reports/17112020-13:51-javierlopez.json') as json_file:
+                data = json.load(json_file)
+                
+                # web size!
+                # webSizeBytes = data['audits']['diagnostics']['details']['items'][0]['totalByteWeight']
+                # webSizeMB = round(webSizeBytes/pow(1024,2),2)
+                
+                # # ALT images!! 0 is some links missin
+                # altScore = data['audits']['image-alt']['score']
+                # altScoreAmount = len(data['audits']['image-alt']['details']['items'])
+
+                # # Performance and performance text...
+                # performanceScore = round(data['categories']['performance']['score']*100)
+                
+                # # accesibility
+                # accessibilityScore = round(data['categories']['accessibility']['score']*100)
+
+                # # accesibility
+                # practicesScore = round(data['categories']['best-practices']['score']*100)
+                
+                # # accesibility
+                # seoScore = round(data['categories']['seo']['score']*100)
+                
+                # deadlinks = data['audits']['crawlable-anchors']['score']
+                # linksAmount = len(data['audits']['crawlable-anchors']['details']['items'])
+                
+                # print(linksAmount)
+                # print(data['categories']['accessibility']['description'])
+
+
+
+
+
+
+
+
+        return "whatever..."
 
 
 

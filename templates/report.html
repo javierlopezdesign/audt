@@ -1,10 +1,11 @@
-{% if url == "error" %}
-<h1>Hello {{ url }}!</h1>
+<!-- apply classes to the data -->
+
+
+{% if report %}
+<!-- <h1>Hello {{ report.webSizeMB }}!</h1> -->
 {% else %}
 <!-- <h1>No url provided...</h1> -->
 {% endif %}
-
-
 
 
 
@@ -23,14 +24,14 @@
                     <div class="reportBox">
                         <div class="desktop">
                             <span class="iconify" data-icon="fe:desktop" data-inline="false"></span>
-                            <h3>99</h3>
+                            <h3>{{ report.performanceScore }}</h3>
                             <p class="compare">+11</p>
                         </div>
-                        <div class="mobile">
+                        <!-- <div class="mobile">
                             <span class="iconify" data-icon="bx:bx-mobile-alt" data-inline="false"></span>
                             <h3>99</h3>
                             <p class="compare">+11</p>
-                        </div>
+                        </div> -->
                         <h2><span class="iconify" data-icon="gg:performance" data-inline="false"></span> Performance</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, modi.</p>
                     </div>
@@ -38,29 +39,29 @@
                     <div class="reportBox">
                         <div class="desktop">
                             <span class="iconify" data-icon="fe:desktop" data-inline="false"></span>
-                            <h3>99</h3>
+                            <h3>{{ report.accessibilityScore }}</h3>
                             <p class="compare">+11</p>
                         </div>
-                        <div class="mobile">
+                        <!-- <div class="mobile">
                             <span class="iconify" data-icon="bx:bx-mobile-alt" data-inline="false"></span>
                             <h3>99</h3>
                             <p class="compare">+11</p>
-                        </div>
-                        <h2><span class="iconify" data-icon="la:universal-access-solid" data-inline="false"></span> Accesibility</h2>
+                        </div> -->
+                        <h2><span class="iconify" data-icon="la:universal-access-solid" data-inline="false"></span> Accessibility</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, modi.</p>
                     </div>
                     <!-- Procedures -->
                     <div class="reportBox">
                         <div class="desktop">
                             <span class="iconify" data-icon="fe:desktop" data-inline="false"></span>
-                            <h3>99</h3>
+                            <h3>{{ report.practicesScore }}</h3>
                             <p class="compare">+11</p>
                         </div>
-                        <div class="mobile">
+                        <!-- <div class="mobile">
                             <span class="iconify" data-icon="bx:bx-mobile-alt" data-inline="false"></span>
                             <h3>99</h3>
                             <p class="compare">+11</p>
-                        </div>
+                        </div> -->
                         <h2><span class="iconify" data-icon="ant-design:code-outlined" data-inline="false"></span> Procedures</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, modi.</p>
                     </div>
@@ -68,33 +69,33 @@
                     <div class="reportBox">
                         <div class="desktop">
                             <span class="iconify" data-icon="fe:desktop" data-inline="false"></span>
-                            <h3>99</h3>
+                            <h3>{{ report.seoScore }}</h3>
                             <p class="compare">+11</p>
                         </div>
-                        <div class="mobile">
+                        <!-- <div class="mobile">
                             <span class="iconify" data-icon="bx:bx-mobile-alt" data-inline="false"></span>
                             <h3>99</h3>
                             <p class="compare">+11</p>
-                        </div>
+                        </div> -->
                         <h2><span class="iconify" data-icon="mdi:credit-card-search-outline" data-inline="false"></span> SEO</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, modi.</p>
                     </div>
                 </div>
                 <div class="smallBoxesContainer">
                     <div class="reportBoxSmall">
-                        <h3>99</h3>
+                        <h3>{{ report.webSizeMB }} Mb.</h3>
                         <p class="compare">+11</p>
                         <h2><span class="iconify" data-icon="la:weight-solid" data-inline="false"></span> Size</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, modi.</p>
                     </div>
                     <div class="reportBoxSmall">
-                        <h3>99</h3>
+                        <h3>{{ report.linksAmount }}</h3>
                         <p class="compare">+11</p>
                         <h2><span class="iconify" data-icon="bx:bx-link" data-inline="false"></span> Dead Links</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, modi.</p>
                     </div>
                     <div class="reportBoxSmall">
-                        <h3>99</h3>
+                        <h3>{{ report.altScoreAmount }}</h3>
                         <p class="compare">+11</p>
                         <h2><span class="iconify" data-icon="bx:bx-message-alt-detail" data-inline="false"></span> ALT Property</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, modi.</p>
