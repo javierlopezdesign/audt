@@ -27,13 +27,35 @@ def report():
                         
                                 # launch lighthouse
                                 # getting filename
-                                trimmedUrl = urlRequested.split("://")[1]
+                                trimmedUrl = urlRequested.split("://www.")[1]
                                 timestamp = time.strftime('%d%m%Y-%H:%M')
-                                filename =  trimmedUrl + "-" + timestamp
+                                filename =  timestamp + "-" + trimmedUrl
 
                                 # print(filename)
 
-                                os.system("lighthouse-ci " + urlRequested + " -s --report=static/reports --filename=" + filename + " --jsonReport")
+                                os.system("lighthouse-ci " + urlRequested + " --silent --report=static/reports --filename=" + filename + " --jsonReport")
+
+
+
+
+
+
+
+
+
+
+
+
+                                # read the JSON and parse the variables!!!!
+
+
+
+
+
+
+
+
+
 
 
                                 return render_template('report.html', url = urlRequested)
@@ -59,7 +81,7 @@ def report():
 @app.route('/test', methods=['GET', 'POST'])
 def test():
         timestamp = time.strftime('%d%m%Y-%H:%M') 
-        return timestamp
+        return render_template('javierlopez.html')
 
 
 
