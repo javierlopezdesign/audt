@@ -1,6 +1,5 @@
 <!-- apply classes to the data -->
 
-
 {% include "htmlHeaders.html" %}
 
 <body>
@@ -22,7 +21,7 @@
                         <div class="desktop">
                             <span class="iconify" data-icon="fe:desktop" data-inline="false"></span>
                             <h3>{{ report.performanceScore }}</h3>
-                            <p class="compare">+11</p>
+                            <p class="compare">{{ report.performanceScore - reportPrev.performanceScore }}</p>
                         </div>
                         <!-- <div class="mobile">
                             <span class="iconify" data-icon="bx:bx-mobile-alt" data-inline="false"></span>
@@ -37,7 +36,7 @@
                         <div class="desktop">
                             <span class="iconify" data-icon="fe:desktop" data-inline="false"></span>
                             <h3>{{ report.accessibilityScore }}</h3>
-                            <p class="compare">+11</p>
+                            <p class="compare">{{ report.accessibilityScore - reportPrev.accessibilityScore }}</p>
                         </div>
                         <!-- <div class="mobile">
                             <span class="iconify" data-icon="bx:bx-mobile-alt" data-inline="false"></span>
@@ -52,7 +51,7 @@
                         <div class="desktop">
                             <span class="iconify" data-icon="fe:desktop" data-inline="false"></span>
                             <h3>{{ report.practicesScore }}</h3>
-                            <p class="compare">+11</p>
+                            <p class="compare">{{ report.practicesScore - reportPrev.practicesScore }}</p>
                         </div>
                         <!-- <div class="mobile">
                             <span class="iconify" data-icon="bx:bx-mobile-alt" data-inline="false"></span>
@@ -67,7 +66,7 @@
                         <div class="desktop">
                             <span class="iconify" data-icon="fe:desktop" data-inline="false"></span>
                             <h3>{{ report.seoScore }}</h3>
-                            <p class="compare">+11</p>
+                            <p class="compare">{{ reportPrev.seoScore - report.seoScore }}</p>
                         </div>
                         <!-- <div class="mobile">
                             <span class="iconify" data-icon="bx:bx-mobile-alt" data-inline="false"></span>
@@ -81,25 +80,95 @@
                 <div class="smallBoxesContainer">
                     <div class="reportBoxSmall">
                         <h3>{{ report.webSizeMB }} Mb.</h3>
-                        <p class="compare">+11</p>
+                        <p class="compare">{{ report.webSizeMB - reportPrev.webSizeMB }}</p>
                         <h2><span class="iconify" data-icon="la:weight-solid" data-inline="false"></span> Size</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, modi.</p>
                     </div>
                     <div class="reportBoxSmall">
                         <h3>{{ report.linksAmount }}</h3>
-                        <p class="compare">+11</p>
+                        <p class="compare">{{ report.linksAmount - reportPrev.linksAmount }}</p>
                         <h2><span class="iconify" data-icon="bx:bx-link" data-inline="false"></span> Dead Links</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, modi.</p>
                     </div>
                     <div class="reportBoxSmall">
                         <h3>{{ report.altScoreAmount }}</h3>
-                        <p class="compare">+11</p>
+                        <p class="compare">{{ report.altScoreAmount - reportPrev.altScoreAmount }}</p>
                         <h2><span class="iconify" data-icon="bx:bx-message-alt-detail" data-inline="false"></span> ALT Property</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, modi.</p>
                     </div>
                 </div>
             </div>
-    </main>
+            <div class="containerReport previousReports">
+                <h2>Previous audit...</h2>
+                <div class="report">
+                    <div class="boxesContainer">
+                        <!-- Performance -->
+                        <div class="reportBox">
+                            <div class="desktop">
+                                <span class="iconify" data-icon="fe:desktop" data-inline="false"></span>
+                                <h3>{{ reportPrev.performanceScore }}</h3>
+                            </div>
+
+                            <h2><span class="iconify" data-icon="gg:performance" data-inline="false"></span> Performance</h2>
+                        </div>
+                        <!-- Accesibility -->
+                        <div class="reportBox">
+                            <div class="desktop">
+                                <span class="iconify" data-icon="fe:desktop" data-inline="false"></span>
+                                <h3>{{ reportPrev.accessibilityScore }}</h3>
+                            </div>
+
+                            <h2><span class="iconify" data-icon="la:universal-access-solid" data-inline="false"></span> Accesibility</h2>
+                        </div>
+                        <!-- Procedures -->
+                        <div class="reportBox">
+                            <div class="desktop">
+                                <span class="iconify" data-icon="fe:desktop" data-inline="false"></span>
+                                <h3>{{ report.practicesScore }}</h3>
+                            </div>
+
+                            <h2><span class="iconify" data-icon="ant-design:code-outlined" data-inline="false"></span> Procedures</h2>
+                        </div>
+                        <!-- SEO -->
+                        <div class="reportBox">
+                            <div class="desktop">
+                                <span class="iconify" data-icon="fe:desktop" data-inline="false"></span>
+                                <h3>{{ report.seoScore }}</h3>
+                            </div>
+
+                            <h2><span class="iconify" data-icon="mdi:credit-card-search-outline" data-inline="false"></span> SEO</h2>
+                        </div>
+                    </div>
+                    <div class="smallBoxesContainer">
+                        <div class="reportBoxSmall">
+                            <h3>{{ report.webSizeMB }} Mb.</h3>
+                            <h2><span class="iconify" data-icon="la:weight-solid" data-inline="false"></span> Size</h2>
+                        </div>
+                        <div class="reportBoxSmall">
+                            <h3>{{ report.linksAmount }}</h3>
+                            <h2><span class="iconify" data-icon="bx:bx-link" data-inline="false"></span> Dead Links</h2>
+                        </div>
+                        <div class="reportBoxSmall">
+                            <h3>{{ report.altScoreAmount }}</h3>
+                            <h2><span class="iconify" data-icon="bx:bx-message-alt-detail" data-inline="false"></span> ALT Property</h2>
+                        </div>
+                    </div>
+
+
+                    
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+        </main>
 
     {% include "footer.html" %}
 

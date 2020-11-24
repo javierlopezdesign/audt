@@ -367,9 +367,16 @@ footer .powered p {
 }
 
 .containerReport h1 {
-  font-size: 2rem;
+  font-size: 1rem;
   padding: 0.5rem;
 }
+@media screen and (min-width: 670px) {
+  .containerReport h1 {
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+}
+
 
 .containerReport .desktop, .containerReport .mobile {
   width: 70%;
@@ -437,6 +444,15 @@ footer .powered p {
           box-shadow: 0 0 4px 1px #d9722e;
   padding: 1rem 0.5rem;
 }
+.containerReport .report .smallBoxesContainer .reportBoxSmall h3{
+  text-align: center;
+  font-size: 1.5rem;
+}
+.containerReport .report .smallBoxesContainer .reportBoxSmall .compare{
+  
+  text-align: center;
+  font-size: 1rem;
+}
 
 @media screen and (min-width: 670px) {
   .containerReport .report .smallBoxesContainer .reportBoxSmall {
@@ -445,17 +461,29 @@ footer .powered p {
 }
 
 .compare {
-  display: none;
+  /* display: none; */
+  color: #d9722e;
+  padding: 0 0 0 0.5rem;
+  margin-top: -0.5rem;
+}
+.reportBoxSmall .compare{
+  color: #d9722e;
+  padding: 0 0 0 0;
+  margin-top: 0;
 }
 
 #loader {
+  text-align: center;
+  max-width: 450px;
+  margin: 4rem auto;
+  padding: 1rem;
   border: 16px solid #f3f3f3;
   border-radius: 50%;
-  border-top: 16px solid #3498db;
+  border-top: 16px solid #d9722e;
   width: 120px;
   height: 120px;
-  -webkit-animation: spin 2s linear infinite; /* Safari */
-  animation: spin 2s linear infinite;
+  -webkit-animation: spin 3s linear infinite; /* Safari */
+  animation: spin 3s linear infinite;
 }
 
 @-webkit-keyframes spin {
@@ -466,4 +494,13 @@ footer .powered p {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+.previousReports {
+  margin: 0 auto;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+.loadingText{
+  text-align: center;
 }

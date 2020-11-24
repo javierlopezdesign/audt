@@ -9,8 +9,9 @@
 
 <body>
     
-    <div id="loader" class="loader"></div>
-    <h1>The site is being checked...</h1>
+    <div id="loader" class="loader">
+    </div>
+    <h1 class="loadingText">The site is being checked...</h1> 
     <!--
     <p>{{ urlrequested.id }} | {{ urlrequested.url }}</p>
     <p>{{ urlrequested.path }}</p>
@@ -23,6 +24,6 @@
 <script>
     setInterval(function(){
         window.open(link, "_self")},
-         5000);
+         3300);
 </script>
 </html>
