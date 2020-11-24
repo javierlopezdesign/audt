@@ -1,14 +1,6 @@
 <!-- apply classes to the data -->
 
 
-{% if report %}
-<!-- <h1>Hello {{ report.webSizeMB }}!</h1> -->
-{% else %}
-<!-- <h1>No url provided...</h1> -->
-{% endif %}
-
-
-
 {% include "htmlHeaders.html" %}
 
 <body>
@@ -16,6 +8,11 @@
 
 <body>
     <main>
+        <!-- {% if waitingReport %}
+            <div class="alert">
+                <p>Report is being generated...</p>
+            </div>
+        {% endif %} -->
         <div class="containerReport">
             <h1>{{ report.url }}</h1>
             <div class="report">

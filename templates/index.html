@@ -1,12 +1,3 @@
-<!-- {% if urlError %}
-<h1>Hello</h1>
-{% else %}
-<h1>No url provided...</h1>
-{% endif %} -->
-
-
-
-
 {% include "htmlHeaders.html" %}
 
 <body>
@@ -15,17 +6,24 @@
         <div class="container">
             <h1>AuDT the tool to keep your performance checks.</h1>
             
+            
+            
+            
+
+
+
+
             {% if urlError %}
                 <div class="alert">
                     <p>{{ urlError }}</p>
                 </div>
             {% endif %}
             
-            <form action="{{ url_for('report') }}" method="POST">
+            <form action="{{ url_for('processurl') }}" method="POST">
                 <label for="url"></label>
                 <div class="inputurl">
                     <input type="text" name="url" placeholder="Introduce a URL..." id="url" required>
-                    <button type="submit" name="urlSubmit">Check it!</button>
+                    <button id="formSubmit" name="urlSubmit">Check it!</button>
                 </div>
                 <p>Message about GDPR. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste iusto, tempore labore laboriosam corrupti iure dolor laborum accusantium adipisci dolore?
                     <a href="">link to whatever need to link</a>

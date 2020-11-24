@@ -1,0 +1,46 @@
+{% include "htmlHeaders.html" %}
+
+<style>
+    table{
+        border: 1px solid blue;
+        padding:0.5rem;
+        font-weight: 300;
+    }
+    thead{
+        background-color: blue;
+        color: white;
+    }
+
+    tr:nth-child(even){
+        background-color: lightgrey;
+    }
+    td{
+        padding: 0.3rem;
+    }
+
+</style>
+<html>
+   <body>
+   
+      <table>
+         <thead>
+            <td>ID</td>
+            <td>URL</td>
+            <td>Datetime</td>
+            <td>Json</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr style="border: 1px solid blue;">
+               <td>{{row["id"]}}</td>
+               <td>{{row["url"]}}</td>
+               <td> {{ row["datetime"]}}</td>
+               <td>{{row['json']}}</td>	
+            </tr>
+         {% endfor %}
+      </table>
+      
+      <a href = "/">Go back to home page</a>
+      
+   </body>
+</html>
