@@ -42,7 +42,7 @@ def processurl(data=None):
                                 # r = http.request('GET', urlRequested)         
                 
                                 # getting filename
-                                timestamp = time.strftime('%d%m%Y-%H:%M')
+                                timestamp = time.strftime('%d-%m-%Y-%H:%M')
 
                                 class urlRequestClass:
                                         # id will be overwritted.
@@ -135,6 +135,7 @@ def report():
 
                         # web size!
                         url = rows[0]['url']
+                        date =  rows[0]['datetime']
                         webSizeBytes = data['audits']['diagnostics']['details']['items'][0]['totalByteWeight']
                         webSizeMB = round(webSizeBytes/pow(1024,2),2)
                 
@@ -166,42 +167,45 @@ def report():
         sqlquery = "SELECT * FROM audits WHERE url = '" + report.url + "' ORDER BY id DESC limit 2"
         cur.execute(sqlquery)
         rows = cur.fetchall()
-        filename = rows[1]['json']
+        if len(rows)==0:
+                reportPrev = ('noaudits')
+        else:
+                filename = rows[1]['json']
 
-        with open(path + filename) as json_file:
-                data = json.load(json_file)
+                with open(path + filename) as json_file:
+                        data = json.load(json_file)
 
-                class reportClass:
-                
-                # Last one...
-
-                        # web size!
-                        # url = rows[0]['url']
-                        webSizeBytes = data['audits']['diagnostics']['details']['items'][0]['totalByteWeight']
-                        webSizeMB = round(webSizeBytes/pow(1024,2),2)
-                
-                        # dead links
-                        deadlinks = data['audits']['crawlable-anchors']['score']
-                        linksAmount = len(data['audits']['crawlable-anchors']['details']['items'])
-
-                        # ALT images!! 0 is some links missin
-                        altScore = data['audits']['image-alt']['score']
-                        altScoreAmount = len(data['audits']['image-alt']['details']['items'])
-
-                        # Performance
-                        performanceScore = round(data['categories']['performance']['score']*100)
+                        class reportClass:
                         
-                        # accesibility
-                        accessibilityScore = round(data['categories']['accessibility']['score']*100)
+                        # Last one...
 
-                        # practices
-                        practicesScore = round(data['categories']['best-practices']['score']*100)
+                                # web size!
+                                # url = rows[0]['url']
+                                webSizeBytes = data['audits']['diagnostics']['details']['items'][0]['totalByteWeight']
+                                webSizeMB = round(webSizeBytes/pow(1024,2),2)
                         
-                        # seo
-                        seoScore = round(data['categories']['seo']['score']*100)
-                reportPrev = reportClass()
+                                # dead links
+                                deadlinks = data['audits']['crawlable-anchors']['score']
+                                linksAmount = len(data['audits']['crawlable-anchors']['details']['items'])
 
-        # return render_template('report.html', report = report , reportPrev = reportPrev)
+                                # ALT images!! 0 is some links missin
+                                altScore = data['audits']['image-alt']['score']
+                                altScoreAmount = len(data['audits']['image-alt']['details']['items'])
+
+                                # Performance
+                                performanceScore = round(data['categories']['performance']['score']*100)
+                                
+                                # accesibility
+                                accessibilityScore = round(data['categories']['accessibility']['score']*100)
+
+                                # practices
+                                practicesScore = round(data['categories']['best-practices']['score']*100)
+                                
+                                # seo
+                                seoScore = round(data['categories']['seo']['score']*100)
+                        reportPrev = reportClass()
+
+                # return render_template('report.html', report = report , reportPrev = reportPrev)
         return render_template('report.html', report = report ,reportPrev = reportPrev)
 
 @app.route('/test', methods=['GET', 'POST'])
