@@ -123,8 +123,11 @@ def report():
         path = "static/reports/"
 
         # get rid of .html
+
         filetoRemove = filename[:-4] + "html"
-        os.system("rm " + path + filetoRemove )
+        
+        if os.path.isfile(path + filetoRemove) == True:
+                os.system("rm " + path + filetoRemove )
 
 
         with open(path + filename) as json_file:
@@ -167,8 +170,39 @@ def report():
         sqlquery = "SELECT * FROM audits WHERE url = '" + report.url + "' ORDER BY id DESC limit 2"
         cur.execute(sqlquery)
         rows = cur.fetchall()
-        if len(rows)==0:
-                reportPrev = ('noaudits')
+        if len(rows)<=1:
+                # reportPrev = ('noaudits')
+                print("NO PREVIOUS AUDIT!!!")
+                
+                # print(len(rows))
+
+                class reportClass:
+                        # flag to know if it was found
+                        exists=0
+                        # web size!
+                        webSizeMB = 0
+                
+                        # dead links
+                        deadlinks = 0
+                        linksAmount = 0
+
+                        # ALT images!! 0 is some links missin
+                        altScore = 0
+                        altScoreAmount = 0
+
+                        # Performance
+                        performanceScore = 0
+                        
+                        # accesibility
+                        accessibilityScore = 0
+
+                        # practices
+                        practicesScore = 0
+                        
+                        # seo
+                        seoScore = 0
+                reportPrev = reportClass()
+
         else:
                 filename = rows[1]['json']
 
@@ -178,7 +212,8 @@ def report():
                         class reportClass:
                         
                         # Last one...
-
+                                # flag to know if it was found
+                                exists=1
                                 # web size!
                                 # url = rows[0]['url']
                                 webSizeBytes = data['audits']['diagnostics']['details']['items'][0]['totalByteWeight']

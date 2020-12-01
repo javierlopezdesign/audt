@@ -13,7 +13,10 @@
                         <div class="desktop">
                             <span class="iconify" data-icon="fe:desktop" data-inline="false"></span>
                             <h3>{{ report.performanceScore }}</h3>
-                            <p class="compare">{{ report.performanceScore - reportPrev.performanceScore }}</p>
+                            {% if reportPrev.exists == 1 %}
+                                <p class="compare">{{ report.performanceScore - reportPrev.performanceScore }}</p>
+                            {% endif %}
+                            
                         </div>
                         <!-- <div class="mobile">
                             <span class="iconify" data-icon="bx:bx-mobile-alt" data-inline="false"></span>
@@ -28,7 +31,9 @@
                         <div class="desktop">
                             <span class="iconify" data-icon="fe:desktop" data-inline="false"></span>
                             <h3>{{ report.accessibilityScore }}</h3>
-                            <p class="compare">{{ report.accessibilityScore - reportPrev.accessibilityScore }}</p>
+                            {% if reportPrev.exists == 1 %}
+                                    <p class="compare">{{ report.accessibilityScore - reportPrev.accessibilityScore }}</p>
+                            {% endif %}
                         </div>
                         <!-- <div class="mobile">
                             <span class="iconify" data-icon="bx:bx-mobile-alt" data-inline="false"></span>
@@ -43,7 +48,9 @@
                         <div class="desktop">
                             <span class="iconify" data-icon="fe:desktop" data-inline="false"></span>
                             <h3>{{ report.practicesScore }}</h3>
-                            <p class="compare">{{ report.practicesScore - reportPrev.practicesScore }}</p>
+                            {% if reportPrev.exists == 1 %}
+                                    <p class="compare">{{ report.practicesScore - reportPrev.practicesScore }}</p>
+                            {% endif %}
                         </div>
                         <!-- <div class="mobile">
                             <span class="iconify" data-icon="bx:bx-mobile-alt" data-inline="false"></span>
@@ -58,7 +65,9 @@
                         <div class="desktop">
                             <span class="iconify" data-icon="fe:desktop" data-inline="false"></span>
                             <h3>{{ report.seoScore }}</h3>
-                            <p class="compare">{{ reportPrev.seoScore - report.seoScore }}</p>
+                            {% if reportPrev.exists == 1 %}
+                                    <p class="compare">{{ reportPrev.seoScore - report.seoScore }}</p>
+                            {% endif %}
                         </div>
                         <!-- <div class="mobile">
                             <span class="iconify" data-icon="bx:bx-mobile-alt" data-inline="false"></span>
@@ -72,19 +81,25 @@
                 <div class="smallBoxesContainer">
                     <div class="reportBoxSmall">
                         <h3>{{ report.webSizeMB }} Mb.</h3>
-                        <p class="compare">{{ report.webSizeMB - reportPrev.webSizeMB }}</p>
+                        {% if reportPrev.exists == 1 %}
+                            <p class="compare">{{ report.webSizeMB - reportPrev.webSizeMB }}</p>
+                        {% endif %}
                         <h2><span class="iconify" data-icon="la:weight-solid" data-inline="false"></span> Size</h2>
                         <p>This is the size of all HTML code on your web page, this size does not include external javascripts or external CSS files. </p>
                     </div>
                     <div class="reportBoxSmall">
                         <h3>{{ report.linksAmount }}</h3>
-                        <p class="compare">{{ report.linksAmount - reportPrev.linksAmount }}</p>
+                        {% if reportPrev.exists == 1 %}
+                            <p class="compare">{{ report.linksAmount - reportPrev.linksAmount }}</p>
+                        {% endif %}
                         <h2><span class="iconify" data-icon="bx:bx-link" data-inline="false"></span> Dead Links</h2>
                         <p>This is the links dead, be aware users can be annoyed if a link doesn't work!</p>
                     </div>
                     <div class="reportBoxSmall">
                         <h3>{{ report.altScoreAmount }}</h3>
-                        <p class="compare">{{ report.altScoreAmount - reportPrev.altScoreAmount }}</p>
+                        {% if reportPrev.exists == 1 %}
+                            <p class="compare">{{ report.altScoreAmount - reportPrev.altScoreAmount }}</p>
+                        {% endif %}
                         <h2><span class="iconify" data-icon="bx:bx-message-alt-detail" data-inline="false"></span> ALT Property</h2>
                         <p>To apply a good SEO the alternative image text must have a descriptive name.</p>
                     </div>
@@ -92,8 +107,8 @@
             </div>
             <div class="containerReport previousReports">
                 
-                {% if reportPrev=='noaudits' %}
-
+                {% if reportPrev.exists == 0 %}
+                
                     <h2>Previous audit</h2>
                     <h3>No previous audits carried out...</h3>
 
@@ -125,7 +140,7 @@
                             <div class="reportBox">
                                 <div class="desktop">
                                     <span class="iconify" data-icon="fe:desktop" data-inline="false"></span>
-                                    <h3>{{ report.practicesScore }}</h3>
+                                    <h3>{{ reportPrev.practicesScore }}</h3>
                                 </div>
 
                                 <h2><span class="iconify" data-icon="ant-design:code-outlined" data-inline="false"></span> Procedures</h2>
@@ -134,7 +149,7 @@
                             <div class="reportBox">
                                 <div class="desktop">
                                     <span class="iconify" data-icon="fe:desktop" data-inline="false"></span>
-                                    <h3>{{ report.seoScore }}</h3>
+                                    <h3>{{ reportPrev.seoScore }}</h3>
                                 </div>
 
                                 <h2><span class="iconify" data-icon="mdi:credit-card-search-outline" data-inline="false"></span> SEO</h2>
@@ -142,15 +157,15 @@
                         </div>
                         <div class="smallBoxesContainer">
                             <div class="reportBoxSmall">
-                                <h3>{{ report.webSizeMB }} Mb.</h3>
+                                <h3>{{ reportPrev.webSizeMB }} Mb.</h3>
                                 <h2><span class="iconify" data-icon="la:weight-solid" data-inline="false"></span> Size</h2>
                             </div>
                             <div class="reportBoxSmall">
-                                <h3>{{ report.linksAmount }}</h3>
+                                <h3>{{ reportPrev.linksAmount }}</h3>
                                 <h2><span class="iconify" data-icon="bx:bx-link" data-inline="false"></span> Dead Links</h2>
                             </div>
                             <div class="reportBoxSmall">
-                                <h3>{{ report.altScoreAmount }}</h3>
+                                <h3>{{ reportPrev.altScoreAmount }}</h3>
                                 <h2><span class="iconify" data-icon="bx:bx-message-alt-detail" data-inline="false"></span> ALT Property</h2>
                             </div>
                         </div>
