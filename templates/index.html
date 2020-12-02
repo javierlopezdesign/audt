@@ -1,0 +1,79 @@
+{% include "htmlHeaders.html" %}
+{% include "nav.html" %}
+
+<body>
+    <header>
+        <div class="container">
+            <h1>AuDT the tool to keep your performance checks.</h1>
+            
+            {% if urlError %}
+                <div class="alert">
+                    <p>{{ urlError }}</p>
+                </div>
+            {% endif %}
+            
+            <form action="{{ url_for('processurl') }}" method="POST">
+                <label for="url"></label>
+                <div class="inputurl">
+                    <input type="text" name="url" placeholder="Introduce a URL..." id="url" required>
+                    <button id="formSubmit" name="urlSubmit">Check it!</button>
+                </div>
+                <p>Message about GDPR. This site is developed for training purposes, no personal data is being held, apart of date, time, the domain and the data that google lighthouse service provide. For any information please read 
+                    <a href="https://policies.google.com/">Google data policies</a>
+                </p>
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <!-- Add main file here -->
+        <div class="aboutus" id="aboutus">
+            <div class="container">
+                <div class="aboutusContent">
+                    <div class="text">
+                        <h2>What's AuDT?</h2>
+                        <p>FoxAuDT basicly is a tool to have a historical of the auditories carried out through the development or testing stage. As web/app developers we have faced some difficulties during the testing, some changes can leave bad performance
+                            or issues without noticing it. Can you guess a CMS already deployed and the client upload huge images, or leave dead links, how that would represent on the SEO? AuDT store previous auditories, compare them and show you some
+                            clues about where the site could have issues. It is based on the Google Dev tool, lighthouse running the lastest version.</p>
+                    </div>
+                    <img src="{{ url_for('static', filename='images/aboutuspic.jpg') }}" alt="measures and infographics">
+                </div>
+            </div>
+        </div>
+
+        <div class="features" id="features">
+            <div class="container">
+                <h2>What metrics AuDT carry out?</h2>
+                <p>See how well your website performs. Then, get tips to improve your user experience. Sign in to track your progress over time.</p>
+
+                <div class="featureBox">
+                    <h3><span class="iconify" data-icon="bx:bxs-down-arrow" data-inline="false" data-rotate="270deg"></span> Performance</h3>
+                    <p>Optimizing your website's performance is crucial to increasing traffic, improving conversion rates, generating more leads, and increasing revenue.</p>
+                </div>
+
+                <div class="featureBox">
+                    <h3><span class="iconify" data-icon="bx:bxs-down-arrow" data-inline="false" data-rotate="270deg"></span> Accesibility</h3>
+                    <p>Checks for common issues that may prevent users from accessing your content.</p>
+                </div>
+                <div class="featureBox">
+
+                    <h3><span class="iconify rotated" data-icon="bx:bxs-down-arrow" data-inline="false" data-rotate="270deg"></span> Procedures</h3>
+                    <p>Looks for everything from HTTPS usage to correct image aspect ratios.</p>
+                </div>
+
+                <div class="featureBox">
+
+                    <h3><span class="iconify" data-icon="bx:bxs-down-arrow" data-inline="false" data-rotate="270deg"></span> SEO</h3>
+                    <p>Optimizing your website content for search helps you drive organic traffic to your website. You can do this by providing a great experience for people and web crawlers alike.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+    {% include "footer.html" %}
+
+
+
+</html>
+</body>

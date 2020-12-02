@@ -1,0 +1,30 @@
+{% include "htmlHeaders.html" %}
+
+{% if urlrequested.id is defined %}
+    <script>link = "{{ url_for('processurl', data = urlrequested.id) }}";</script>
+{% else %}
+    <script>link = "{{ url_for('processurl', data = urlrequested) }}";</script>
+{% endif %}
+
+
+<body>
+    
+    <div id="loader" class="loader">
+    </div>
+    <h1 class="loadingText">The site is being audited...</h1>
+    <p style="text-align: center;">Please be patient, the browser will refresh once report is done.</p> 
+    <!--
+    <p>{{ urlrequested.id }} | {{ urlrequested.url }}</p>
+    <p>{{ urlrequested.path }}</p>
+    <p>{{ urlrequested.trimmedUrl }}</p>
+    <p>{{ urlrequested.filename }}</p> 
+    -->
+
+
+</body>
+<script>
+    setInterval(function(){
+        window.open(link, "_self")},
+         3300);
+</script>
+</html>

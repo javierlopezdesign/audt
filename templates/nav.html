@@ -1,0 +1,14 @@
+<nav>
+    <div class="logo">
+        <a href="{{ url_for('root') }}"><img src="{{ url_for('static', filename='images/logo.svg') }}" alt="audt logo"></a>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="{{ url_for('root') }}#aboutus">About Us</a></li>
+            <li><a href="{{ url_for('root') }}#features">Features</a></li>
+            <li><a href="{{ url_for('list') }}">History</a></li>
+
+            <!-- <li><a href="">FAQ</a></li> -->
+        </ul>
+    </div>
+</nav>

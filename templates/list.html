@@ -1,0 +1,50 @@
+{% include "htmlHeaders.html" %}
+{% include "nav.html" %}
+
+<style>
+    table{
+        padding: 5rem 0.5rem;
+        font-weight: 300;
+        padding-top: 5rem;
+        margin: 0 auto;
+    }
+    thead{
+        background-color: darkgrey;
+        color: white;
+    }
+
+    tr:nth-child(even){
+        background-color: lightgrey;
+    }
+    td{
+        padding: 0.3rem;
+    }
+
+</style>
+<html>
+   <body>
+   
+      <table>
+         <thead>
+            <td>ID</td>
+            <td>URL</td>
+            <td>Datetime</td>
+            <td>Json</td>
+            <td>Action</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr style="border: 1px solid blue;">
+               <td>{{row["id"]}}</td>
+               <td>{{row["url"]}}</td>
+               <td> {{ row["datetime"]}}</td>
+               <td>{{row['json']}}</td>
+               <td><a href = "{{ url_for('report', report = row["id"]) }}">Open audit</a></td>
+
+            </tr>
+         {% endfor %}
+      </table>
+{% include "footer.html" %}
+      
+   </body>
+</html>

