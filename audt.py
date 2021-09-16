@@ -243,7 +243,7 @@ def report():
                 # return render_template('report.html', report = report , reportPrev = reportPrev)
         return render_template('report.html', report = report ,reportPrev = reportPrev)
 
-@app.route('/test', methods=['GET', 'POST'])
+@app.route('/list', methods=['GET', 'POST'])
 def test():
 
         # test db

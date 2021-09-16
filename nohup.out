@@ -1,0 +1,679 @@
+ * Serving Flask app 'audt.py' (lazy loading)
+ * Environment: development
+ * Debug mode: on
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://77.68.114.98:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 607-095-283
+109.154.139.103 - - [15/Sep/2021 11:36:15] "GET /report?report=83 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:36:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:36:15] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:36:15] "GET /static/images/favicon.png HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:36:24] "GET /report?report=83 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:36:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:36:24] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:36:25] "GET /static/images/favicon.png HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:36:25] "GET /report?report=83 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:36:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:36:26] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:36:26] "GET /static/images/favicon.png HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:36:27] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:36:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:36:27] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:36:27] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:36:34] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:36:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:36:34] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:36:34] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:36:44] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:36:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:36:44] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:36:44] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:37:04] "POST /processurl HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:37:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+- Running Lighthouse on https://www.edinburghbicycle.com/ ...
+
+109.154.139.103 - - [15/Sep/2021 11:37:08] "GET /processurl?data=84 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:37:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:37:12] "GET /processurl?data=84 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:37:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:37:15] "GET /processurl?data=84 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:37:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:37:19] "GET /processurl?data=84 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:37:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:37:22] "GET /processurl?data=84 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:37:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:37:26] "GET /processurl?data=84 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:37:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:37:30] "GET /processurl?data=84 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:37:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:37:33] "[32mGET /processurl?data=84 HTTP/1.1[0m" 302 -
+109.154.139.103 - - [15/Sep/2021 11:37:33] "GET /report?report=84 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:37:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:37:34] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:40:01] "[33mGET /list HTTP/1.1[0m" 404 -
+109.154.139.103 - - [15/Sep/2021 11:40:51] "GET /report?report=25 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:40:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:40:52] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+ * Detected change in '/var/www/audt/audt.py', reloading
+NO PREVIOUS AUDIT!!!
+NO PREVIOUS AUDIT!!!
+NO PREVIOUS AUDIT!!!
+not found...
+not found...
+not found...
+not found...
+not found...
+not found...
+not found...
+___READY TO READ!!!!
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 607-095-283
+ * Detected change in '/var/www/audt/audt.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 607-095-283
+109.154.139.103 - - [15/Sep/2021 11:44:36] "GET /list HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:44:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:44:37] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:45:03] "[35m[1mGET /report?report=74 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/flask/app.py", line 2088, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/lib/python3.8/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3.8/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python3.8/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/var/www/audt/audt.py", line 133, in report
+    with open(path + filename) as json_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'static/reports/01-12-2020-10:50-currys.json'
+109.154.139.103 - - [15/Sep/2021 11:45:03] "GET /report?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:45:03] "GET /report?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:45:03] "GET /report?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:45:03] "GET /report?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:53:47] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:53:47] "GET /static/css/style.css HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:53:47] "GET /static/images/logo.svg HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:53:47] "GET /static/images/aboutuspic.jpg HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:53:48] "GET /static/images/favicon.png HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:58:17] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:58:18] "GET /static/css/style.css HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:58:18] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:58:18] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:59:15] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:59:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:59:16] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:59:16] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:59:17] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:59:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:59:17] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:59:17] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:59:29] "POST /processurl HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:59:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+- Running Lighthouse on https://javierlopez.design/watersofleith/ ...
+
+109.154.139.103 - - [15/Sep/2021 11:59:33] "GET /processurl?data=85 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:59:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:59:36] "GET /processurl?data=85 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:59:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:59:40] "GET /processurl?data=85 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:59:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:59:43] "[32mGET /processurl?data=85 HTTP/1.1[0m" 302 -
+109.154.139.103 - - [15/Sep/2021 11:59:44] "GET /report?report=85 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 11:59:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 11:59:44] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:01:10] code 400, message Bad request version ('þð')
+109.154.139.103 - - [15/Sep/2021 12:01:10] "[35m[1m  ü|µþàSóÜúµ~WÔóp lëJÓÒtäWY' þð[0m" HTTPStatus.BAD_REQUEST -
+109.154.139.103 - - [15/Sep/2021 12:01:10] code 400, message Bad request version ('jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93')
+109.154.139.103 - - [15/Sep/2021 12:01:10] "[35m[1m  ü¼pUâÊÿS¤Ö3lý©Á"5ìsd¼³îL(Bk> tbzBËAÏ"1Á-«-ôÑõ³þ·&qß0Ô  jjÀ+À/À,À0Ì©Ì¨ÀÀ   / 5 [0m" HTTPStatus.BAD_REQUEST -
+109.154.139.103 - - [15/Sep/2021 12:01:15] code 400, message Bad request version ('\x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93jj\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+109.154.139.103 - - [15/Sep/2021 12:01:15] "[35m[1m  üâØ³¯9ùöÿ|ÏÏâý±DÌÓ¼§o ºO8òg}ä ÖÿßÔÑ®×ã+¸1Hô»³¤¤©üÑVD°?£  À+À/À,À0Ì©Ì¨ÀÀ   / 5 jj     ÿ   [0m" HTTPStatus.BAD_REQUEST -
+109.154.139.103 - - [15/Sep/2021 12:01:15] code 400, message Bad request version ('ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93ÊÊ\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+109.154.139.103 - - [15/Sep/2021 12:01:15] "[35m[1m  ü|¡,9Yâ\áí3mm£²1Ø}ÇUºÝá¼oA :ÚÅçåÅ·IÅétöõNõ ÉFÙÉ|DGWC}à  ªªÀ+À/À,À0Ì©Ì¨ÀÀ   / 5 ÊÊ     ÿ   [0m" HTTPStatus.BAD_REQUEST -
+109.154.139.103 - - [15/Sep/2021 12:01:15] code 400, message Bad request version ('zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93zz\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+109.154.139.103 - - [15/Sep/2021 12:01:15] "[35m[1m  ükÙYÍ$g¾] 0gXKÕgø9` ª&ïFÇqhå:lÑï"²eåræM`c8ÁÇ¥zc  zzÀ+À/À,À0Ì©Ì¨ÀÀ   / 5 zz     ÿ   [0m" HTTPStatus.BAD_REQUEST -
+109.154.139.103 - - [15/Sep/2021 12:01:15] code 400, message Bad request version ('zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93**\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+109.154.139.103 - - [15/Sep/2021 12:01:15] "[35m[1m  ü0b=  ªA±uÎ9S3fäÑÎìrY5M¨ E0R}ï*tåc2º9^óé.°:&ä+ÎØwI  zzÀ+À/À,À0Ì©Ì¨ÀÀ   / 5 **     ÿ   [0m" HTTPStatus.BAD_REQUEST -
+109.154.139.103 - - [15/Sep/2021 12:01:35] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:01:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:01:35] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:01:35] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:02:09] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:02:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:02:09] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:02:09] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:02:09] "GET /static/images/favicon.png HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:02:17] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:02:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:02:17] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:02:17] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:09:25] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:09:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:09:25] "GET /static/images/logo.svg HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:09:25] "GET /static/images/aboutuspic.jpg HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:09:31] "POST /processurl HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:09:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+- Running Lighthouse on https://javierlopez.design/watersofleith/ ...
+
+109.154.139.103 - - [15/Sep/2021 12:09:35] "GET /processurl?data=86 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:09:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:09:39] "GET /processurl?data=86 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:09:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:09:43] "[32mGET /processurl?data=86 HTTP/1.1[0m" 302 -
+109.154.139.103 - - [15/Sep/2021 12:09:43] "GET /report?report=86 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:09:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:09:43] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:10:07] "[33mGET /report.html?report=44 HTTP/1.1[0m" 404 -
+109.154.139.103 - - [15/Sep/2021 12:10:16] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:10:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:10:16] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:10:16] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:10:21] "POST /processurl HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:10:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:10:21] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:10:21] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:10:31] "POST /processurl HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:10:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+- Running Lighthouse on https://javierlopez.design/clients/classymassage/index.html ...
+
+109.154.139.103 - - [15/Sep/2021 12:10:34] "GET /processurl?data=87 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:10:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:10:38] "GET /processurl?data=87 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:10:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:10:41] "[32mGET /processurl?data=87 HTTP/1.1[0m" 302 -
+109.154.139.103 - - [15/Sep/2021 12:10:41] "GET /report?report=87 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:10:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:10:41] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:10:59] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:10:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:10:59] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:10:59] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:11:23] "POST /processurl HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:11:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+- Running Lighthouse on https://www.javierlopez.design/beta3/ ...
+
+109.154.139.103 - - [15/Sep/2021 12:11:26] "GET /processurl?data=88 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:11:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:11:30] "GET /processurl?data=88 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:11:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:11:34] "GET /processurl?data=88 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:11:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:11:37] "[32mGET /processurl?data=88 HTTP/1.1[0m" 302 -
+109.154.139.103 - - [15/Sep/2021 12:11:37] "GET /report?report=88 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:11:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:11:37] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:12:20] "POST /processurl HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:12:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+- Running Lighthouse on https://www.javierlopez.design/beta3/ ...
+
+109.154.139.103 - - [15/Sep/2021 12:12:23] "GET /processurl?data=89 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:12:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:12:27] "GET /processurl?data=89 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:12:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:12:30] "GET /processurl?data=89 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:12:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:12:34] "GET /list HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:12:34] "[32mGET /processurl?data=89 HTTP/1.1[0m" 302 -
+109.154.139.103 - - [15/Sep/2021 12:12:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:12:34] "GET /report?report=89 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:12:34] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:12:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:12:34] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:12:34] "GET /static/images/favicon.png HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:13:14] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:13:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:13:14] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:13:14] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:17:08] "POST /processurl HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:17:08] "GET /static/css/style.css HTTP/1.1" 200 -
+- Running Lighthouse on https://www.edinburghbicycle.com/ ...
+
+109.154.139.103 - - [15/Sep/2021 12:17:12] "GET /processurl?data=90 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:17:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:17:16] "GET /processurl?data=90 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:17:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:17:19] "GET /processurl?data=90 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:17:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:17:23] "GET /processurl?data=90 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:17:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:17:26] "GET /processurl?data=90 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:17:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:17:30] "GET /processurl?data=90 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:17:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:17:33] "GET /processurl?data=90 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:17:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:17:37] "GET /processurl?data=90 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:17:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:17:40] "GET /processurl?data=90 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:17:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:17:44] "[32mGET /processurl?data=90 HTTP/1.1[0m" 302 -
+109.154.139.103 - - [15/Sep/2021 12:17:44] "GET /report?report=90 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:17:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:17:45] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:18:21] "GET /report?report=90 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:18:21] "GET /static/css/style.css HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:18:21] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:18:21] "GET /static/images/favicon.png HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:24:15] "GET /report?report=90 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:24:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:24:15] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:24:15] "GET /static/images/favicon.png HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:36:02] "GET /report?report=90 HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 12:36:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:36:02] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 12:36:02] "GET /static/images/favicon.png HTTP/1.1" 200 -
+162.142.125.58 - - [15/Sep/2021 20:48:38] code 400, message Bad request version ('\x06îº¶\x84&VïÓøÔ')
+162.142.125.58 - - [15/Sep/2021 20:48:38] "[35m[1m {  wÏÞéÞîº¶&VïÓøÔ[0m" HTTPStatus.BAD_REQUEST -
+162.142.125.58 - - [15/Sep/2021 20:48:39] "GET / HTTP/1.1" 200 -
+162.142.125.58 - - [15/Sep/2021 20:48:40] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 21:28:41] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 21:28:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 21:28:42] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 21:28:42] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 21:28:46] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 21:28:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 21:28:46] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 21:28:46] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 21:30:11] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 21:30:12] "GET /static/css/style.css HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 21:30:12] "GET /static/images/logo.svg HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 21:30:12] "GET /static/images/aboutuspic.jpg HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 21:30:17] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 21:30:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 21:30:17] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 21:30:17] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 21:30:24] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 21:30:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 21:30:24] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 21:30:24] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 21:42:20] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 21:42:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 21:42:20] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 21:42:20] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 23:12:12] "GET /list HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 23:12:15] "GET /static/css/style.css HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 23:12:15] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 23:15:29] "GET /list HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 23:15:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 23:15:29] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 23:15:29] "GET /static/images/favicon.png HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 23:17:21] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 23:17:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 23:17:21] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 23:17:21] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 23:17:35] code 400, message Bad request version ('**\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93ªª\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+109.154.139.103 - - [15/Sep/2021 23:17:35] "[35m[1m  ü®í-Vl×ÿðîãîÀGBSÙn,Mc3È!i÷< ÇËÇ¨MI¨úDÁÚÁ#êâ2£ûmck¬e  **À+À/À,À0Ì©Ì¨ÀÀ   / 5 ªª     ÿ   [0m" HTTPStatus.BAD_REQUEST -
+109.154.139.103 - - [15/Sep/2021 23:17:35] code 400, message Bad request version ('ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93ZZ\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+109.154.139.103 - - [15/Sep/2021 23:17:35] "[35m[1m  ükÓD!s¹ÜÒè×q"2$ÂÔ{Jiibñ(ú¶Eä DÒïAY& ÉzÄq;è¦å£ÌQfMW®¾ÂUB  ÚÚÀ+À/À,À0Ì©Ì¨ÀÀ   / 5 ZZ     ÿ   [0m" HTTPStatus.BAD_REQUEST -
+109.154.139.103 - - [15/Sep/2021 23:17:35] code 400, message Bad request version ('ÀF9^ÊO\x13\x91³ð³?\x08')
+109.154.139.103 - - [15/Sep/2021 23:17:35] "[35m[1m  üãá»n²*IÀÙàv+Ô#y2hb0ü«1¯óÚD  ÀF9^ÊO³ð³?[0m" HTTPStatus.BAD_REQUEST -
+109.154.139.103 - - [15/Sep/2021 23:17:35] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03àÏé5½\x15Í6¯\x1b\x97\x01')
+109.154.139.103 - - [15/Sep/2021 23:17:35] "[35m[1m  üàÏé5½Í6¯[0m" HTTPStatus.BAD_REQUEST -
+109.154.139.103 - - [15/Sep/2021 23:32:04] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 23:32:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 23:32:04] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 23:32:04] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 23:32:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 23:32:21] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 23:32:21] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 23:46:00] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [15/Sep/2021 23:46:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 23:46:00] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [15/Sep/2021 23:46:00] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 00:22:41] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 00:22:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 00:22:41] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 00:22:41] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 00:22:42] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 00:53:02] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 00:53:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 00:53:03] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 00:53:03] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 00:53:03] "GET /static/images/favicon.png HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 01:14:59] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 01:14:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 01:14:59] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 01:14:59] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 01:14:59] "GET /static/images/favicon.png HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 01:19:00] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 01:19:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 01:19:00] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 01:19:00] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 01:19:00] "GET /static/images/favicon.png HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 01:21:49] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 01:21:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 01:21:50] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 01:21:50] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 01:23:26] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 01:23:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 01:23:26] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 01:23:26] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 01:23:26] "GET /static/images/favicon.png HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 01:23:28] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 01:23:28] "GET /static/css/style.css HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 01:23:28] "GET /static/images/logo.svg HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 01:23:28] "GET /static/images/aboutuspic.jpg HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 01:23:28] "GET /static/images/favicon.png HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 01:23:29] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 01:23:29] "GET /static/css/style.css HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 01:23:29] "GET /static/images/logo.svg HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 01:23:29] "GET /static/images/aboutuspic.jpg HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 01:23:29] "GET /static/images/favicon.png HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 01:31:38] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 01:31:39] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 01:31:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 01:31:39] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 01:31:39] "GET /static/images/favicon.png HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 01:31:43] "POST /processurl HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 01:31:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+- Running Lighthouse on https://javierlopez.design/watersofleith/ ...
+
+109.154.139.103 - - [16/Sep/2021 01:31:47] "GET /processurl?data=91 HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 01:31:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 01:31:51] "GET /processurl?data=91 HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 01:31:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 01:31:54] "GET /processurl?data=91 HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 01:31:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 01:31:58] "GET /processurl?data=91 HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 01:31:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 01:32:01] "GET /processurl?data=91 HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 01:32:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 01:32:05] "[32mGET /processurl?data=91 HTTP/1.1[0m" 302 -
+109.154.139.103 - - [16/Sep/2021 01:32:05] "GET /report?report=91 HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 01:32:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 01:32:05] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 01:34:35] "GET /report?report=91 HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 01:34:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 01:34:35] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 01:34:35] "GET /static/images/favicon.png HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 01:36:27] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 01:36:27] "GET /static/css/style.css HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 01:36:27] "GET /static/images/logo.svg HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 01:36:27] "GET /static/images/aboutuspic.jpg HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 01:37:53] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 01:37:53] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 01:37:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 01:37:53] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 01:45:01] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 01:45:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 01:45:01] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 01:45:01] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 01:45:04] "GET /report?report=91 HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 01:45:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 01:45:04] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 01:45:04] "GET /static/images/favicon.png HTTP/1.1" 200 -
+222.186.19.235 - - [16/Sep/2021 01:56:06] "[33mGET http://fuwu.sogou.com/404/index.html HTTP/1.1[0m" 404 -
+222.186.19.235 - - [16/Sep/2021 01:56:06] code 400, message Bad request version ('À\x14À')
+222.186.19.235 - - [16/Sep/2021 01:56:06] "[35m[1m î  êºt}²KÔXÅ~¢#_ä÷V K8¾£·Á5ì¦>%Ç× x	(reôwgB/?¨¿®è&ÂÍé\lôôiF¨ &Ì¨Ì©À/À0À+À,ÀÀ	ÀÀ[0m" HTTPStatus.BAD_REQUEST -
+222.186.19.235 - - [16/Sep/2021 01:56:06] "[33mGET http://fuwu.sogou.com/404/index.html HTTP/1.1[0m" 404 -
+222.186.19.235 - - [16/Sep/2021 01:56:13] code 400, message Bad request syntax ('\x05\x01\x00')
+222.186.19.235 - - [16/Sep/2021 01:56:13] "[35m[1m [0m" HTTPStatus.BAD_REQUEST -
+109.154.139.103 - - [16/Sep/2021 02:31:04] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/flask/app.py", line 2088, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/lib/python3.8/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3.8/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python3.8/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/var/www/audt/audt.py", line 30, in root
+    return render_template('index.html')
+  File "/usr/lib/python3.8/site-packages/flask/templating.py", line 147, in render_template
+    return _render(
+  File "/usr/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/lib/python3.8/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/usr/lib/python3.8/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/var/www/audt/templates/index.html", line 2, in top-level template code
+    {% include "nav.html" %}
+  File "/var/www/audt/templates/nav.html", line 9, in top-level template code
+    <li><a href="{{ url_for('list') }}#features">Previous Audits</a></li>
+  File "/usr/lib/python3.8/site-packages/flask/helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/usr/lib/python3.8/site-packages/flask/helpers.py", line 325, in url_for
+    rv = url_adapter.build(
+  File "/usr/lib/python3.8/site-packages/werkzeug/routing.py", line 2305, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'list'. Did you mean 'test' instead?
+109.154.139.103 - - [16/Sep/2021 02:31:04] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:31:04] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:31:04] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:31:04] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:31:10] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/flask/app.py", line 2088, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/lib/python3.8/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3.8/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python3.8/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/var/www/audt/audt.py", line 30, in root
+    return render_template('index.html')
+  File "/usr/lib/python3.8/site-packages/flask/templating.py", line 147, in render_template
+    return _render(
+  File "/usr/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/lib/python3.8/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/usr/lib/python3.8/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/var/www/audt/templates/index.html", line 2, in top-level template code
+    {% include "nav.html" %}
+  File "/var/www/audt/templates/nav.html", line 9, in top-level template code
+    <li><a href="{{ url_for('list') }}#features">Previous Audits</a></li>
+  File "/usr/lib/python3.8/site-packages/flask/helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/usr/lib/python3.8/site-packages/flask/helpers.py", line 325, in url_for
+    rv = url_adapter.build(
+  File "/usr/lib/python3.8/site-packages/werkzeug/routing.py", line 2305, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'list'. Did you mean 'test' instead?
+109.154.139.103 - - [16/Sep/2021 02:31:10] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:31:10] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:31:10] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:31:10] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:32:41] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:32:42] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:32:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:32:42] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:32:44] "GET /list HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:32:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:32:44] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:32:46] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:32:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:32:47] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:32:47] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:32:48] "GET /list HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:32:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:32:48] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:32:53] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:32:54] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:32:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:32:54] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:32:54] "GET /static/images/logo.svg HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:33:09] "POST /processurl HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:33:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+- Running Lighthouse on https://www.edinburghbicycle.com/ ...
+
+109.154.139.103 - - [16/Sep/2021 02:33:13] "GET /processurl?data=92 HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:33:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:33:17] "GET /processurl?data=92 HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:33:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:33:21] "GET /processurl?data=92 HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:33:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:33:24] "GET /processurl?data=92 HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:33:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:33:28] "GET /processurl?data=92 HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:33:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:33:31] "GET /processurl?data=92 HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:33:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:33:35] "GET /processurl?data=92 HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:33:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:33:38] "GET /processurl?data=92 HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:33:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:33:42] "GET /processurl?data=92 HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:33:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:33:45] "GET /processurl?data=92 HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:33:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:33:49] "GET /processurl?data=92 HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:33:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:33:52] "GET /processurl?data=92 HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:33:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:33:56] "GET /processurl?data=92 HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:33:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:33:59] "GET /processurl?data=92 HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:33:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:34:03] "[32mGET /processurl?data=92 HTTP/1.1[0m" 302 -
+109.154.139.103 - - [16/Sep/2021 02:34:04] "GET /report?report=92 HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:34:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:34:04] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:34:18] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:34:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:34:18] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:34:18] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:34:29] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:34:29] "GET /static/css/style.css HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:34:30] "GET /static/images/logo.svg HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:34:30] "GET /static/images/aboutuspic.jpg HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:34:30] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:34:30] "GET /static/css/style.css HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:34:30] "GET /static/images/logo.svg HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:34:30] "GET /static/images/aboutuspic.jpg HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:34:30] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:34:30] "GET /static/css/style.css HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:34:30] "GET /static/images/logo.svg HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:34:30] "GET /static/images/aboutuspic.jpg HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:34:31] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:34:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:34:31] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:34:31] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:34:32] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:34:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:34:32] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:34:32] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:34:32] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:34:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:34:32] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:34:33] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:34:53] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:34:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:34:53] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:34:53] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:50:23] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 02:50:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:50:23] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 02:50:23] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:05:34] "GET /report?report=91 HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 03:05:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:05:34] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:05:35] "GET /static/images/favicon.png HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 03:20:37] "GET /report?report=91 HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 03:20:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:20:38] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:20:38] "GET /static/images/favicon.png HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 03:20:41] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 03:20:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:20:41] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:20:41] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:20:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:21:00] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 03:21:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:21:00] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:21:00] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:21:14] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 03:21:14] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:21:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:21:14] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:21:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:21:27] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 03:21:27] "GET /static/css/style.css HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 03:21:27] "GET /static/images/logo.svg HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 03:21:27] "GET /static/images/aboutuspic.jpg HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 03:21:28] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 03:21:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:21:28] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:21:28] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:21:28] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 03:21:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:21:28] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:21:28] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 03:21:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:21:28] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:21:28] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 03:21:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:21:28] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:21:28] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:21:33] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 03:21:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:21:33] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:21:33] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:21:33] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 03:21:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:21:33] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:21:33] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:21:36] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 03:21:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:21:36] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:21:37] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:21:55] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 03:21:56] "GET /static/css/style.css HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 03:21:56] "GET /static/images/logo.svg HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 03:21:56] "GET /static/images/aboutuspic.jpg HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 03:22:06] "GET /list HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 03:22:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:22:06] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:22:09] "GET /report?report=92 HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 03:22:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:22:10] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:22:14] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 03:22:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:22:14] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:22:14] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:22:23] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 03:22:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:22:24] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:22:24] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:26:20] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 03:26:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:26:20] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:26:20] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:26:20] "GET /static/images/favicon.png HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 03:27:30] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 03:27:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:27:30] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:27:30] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:27:33] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 03:27:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:27:33] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:27:33] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:27:33] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 03:27:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:27:34] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:27:34] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:33:35] "GET / HTTP/1.1" 200 -
+109.154.139.103 - - [16/Sep/2021 03:33:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:33:35] "[36mGET /static/images/logo.svg HTTP/1.1[0m" 304 -
+109.154.139.103 - - [16/Sep/2021 03:33:35] "[36mGET /static/images/aboutuspic.jpg HTTP/1.1[0m" 304 -
